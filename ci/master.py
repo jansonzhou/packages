@@ -25,7 +25,7 @@ c['builders'].append(dict(
 	slavenames=['ubuntu1004'],
 	factory=BuildFactory(steps=
 		buildsteps.svn(__opts__) +
-		steps.sdist_external(__opts__) +
+		buildsteps.source_dist_external(__opts__) +
 		buildsteps.trigger_packaging(__opts__) +
 		buildsteps.to_repo(__opts__, types=['deb', 'rpm'], all_repos=True)
 	)
