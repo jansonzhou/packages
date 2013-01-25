@@ -47,7 +47,6 @@ Disk Config extension for python-novaclient
 %files
 %defattr(-, root, root, -)
 %{python_sitelib}/%{srcname}/*
-%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
