@@ -26,7 +26,7 @@ c['builders'].append(dict(
 	factory=BuildFactory(steps=
 		buildsteps.svn(__opts__) +
 		buildsteps.source_dist_external(__opts__) +
-		buildsteps.trigger_packaging(__opts__) +
+		buildsteps.trigger_packaging(__opts__, scheduler='packages packaging') +
 		buildsteps.to_repo(__opts__, types=['deb', 'rpm'], all_repos=True)
 	)
 ))
