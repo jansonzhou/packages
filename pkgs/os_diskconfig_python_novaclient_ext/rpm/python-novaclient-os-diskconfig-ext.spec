@@ -1,6 +1,7 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 %define pkgname  novaclient-os-diskconfig-ext
+%define srcname  os_diskconfig_python_novaclient_ext
 
 Summary:       Disk Config extension for python-novaclient
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
@@ -29,7 +30,7 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Disk Config extension for python-novaclient
 
 %prep
-%setup -q -n python-%{pkgname}-%{version}
+%setup -q -n %{srcname}-%{version}
 %{__rm} -rf tests
 
 %build
@@ -39,17 +40,14 @@ Disk Config extension for python-novaclient
 %{__rm} -rf %{buildroot}
 %{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
-#check
-#pushd test
-#PYTHONPATH=../ %{__python} test_%{pkgname}.py
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{pkgname}/*
-%{python_sitelib}/python_%{pkgname}-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/%{srcname}/*
+%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
