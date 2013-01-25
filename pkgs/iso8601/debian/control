@@ -1,4 +1,4 @@
-Source: python-iso8601
+Source: iso8601
 Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>
