@@ -64,6 +64,7 @@ https://github.com/nose-devs/nose/tarball/master#egg=nose-dev
 %files
 %defattr(-, root, root, -)
 %{python_sitelib}/%{srcname}/*
+%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 /usr/bin/
 /usr/man/man1/
 
