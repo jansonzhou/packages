@@ -14,7 +14,7 @@ Release:       1%{?dist}
 License:       ASL 2.0
 Group:         Development/Languages
 URL:           http://code.google.com/p/argparse/
-Source0:       http://argparse.googlecode.com/files/argparse-%{version}.zip
+Source0:       http://argparse.googlecode.com/files/argparse-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26
