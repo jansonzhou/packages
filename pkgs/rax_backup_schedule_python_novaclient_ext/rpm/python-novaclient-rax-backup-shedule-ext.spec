@@ -14,7 +14,7 @@ Version:       0.1.2
 Release:       1%{?dist}
 License:       ASL 2.0
 Group:         Development/Languages
-Source0:       http://pypi.python.org/packages/source/r/rax_backup_schedule_python_novaclient_ext/rax_backup_schedule_python_novaclient_ext--%{version}.tar.gz
+Source0:       http://pypi.python.org/packages/source/r/rax_backup_schedule_python_novaclient_ext/rax_backup_schedule_python_novaclient_ext-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
