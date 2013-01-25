@@ -1,7 +1,7 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
-%define pkgname nose
-%define srcname nose
+%define pkgname nosetest
+%define srcname nosetest
 
 Summary:       nose extends unittest to make testing easier 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
