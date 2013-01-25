@@ -53,7 +53,6 @@ are installed that are compatible with the Rackspace cloud:
 %prep
 
 %install
-%{__rm} -rf %{buildroot}
 
 %clean
 %{__rm} -rf %{buildroot}
