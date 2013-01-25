@@ -36,7 +36,6 @@ invalid arguments.
 
 %prep
 %setup -q -n %{pkgname}-%{version}
-dos2unix -k README.txt
 %{__rm} -rf doc/source
 
 %build
