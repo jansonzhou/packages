@@ -1,0 +1,14 @@
+Source: python-novaclient-os-networksv2-ext
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
+XS-Python-Version: >= 2.5
+Standards-Version: 3.8.4
+
+Package: python-novaclient-os-networksv2-ext
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+XB-Python-Version: ${python:Versions}
+Description: Adds backup-schedule extension support to python-novaclient
+ Adds backup-schedule extension support to python-novaclient
