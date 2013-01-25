@@ -41,9 +41,6 @@ There's a Python API (the swiftclient module), and a command-line script (swift)
 %{__rm} -rf %{buildroot}
 %{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
-#check
-#pushd test
-#PYTHONPATH=../ %{__python} test_%{pkgname}.py
 
 %clean
 %{__rm} -rf %{buildroot}
@@ -51,8 +48,7 @@ There's a Python API (the swiftclient module), and a command-line script (swift)
 %files
 %defattr(-, root, root, -)
 /usr/bin/*
-%{python_sitelib}/%{pkgname}/*
-%{python_sitelib}/python_%{pkgname}-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/*
 
 %changelog
 

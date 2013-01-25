@@ -1,4 +1,4 @@
-Source: os_diskconfig_python_novaclient_ext
+Source: python-novaclient-os-diskconfig-ext
 Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>
