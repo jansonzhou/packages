@@ -46,7 +46,7 @@ Instance default networks extension support to python-novaclient
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/*
+%{python_sitelib}/%{srcname}/*
 
 %changelog
 
