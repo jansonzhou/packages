@@ -10,5 +10,5 @@ Package: python-novaclient-os-networksv2-ext
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
 XB-Python-Version: ${python:Versions}
-Description: Adds backup-schedule extension support to python-novaclient
- Adds backup-schedule extension support to python-novaclient
+Description: Network extension support to python-novaclient
+ Network extension support to python-novaclient

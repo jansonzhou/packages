@@ -27,7 +27,7 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %description
 
-Disk Config extension for python-novaclient
+Network extension support to python-novaclient
 
 %prep
 %setup -q -n %{srcname}-%{version}
