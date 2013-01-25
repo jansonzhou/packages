@@ -44,7 +44,7 @@ support for Rackspace authentication extensions to OpenStack.
 %clean
 %{__rm} -rf %{buildroot}
 
-%file
+%files
 %defattr(-, root, root, -)
 %{python_sitelib}/*
 
