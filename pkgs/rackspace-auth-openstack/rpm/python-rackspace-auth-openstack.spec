@@ -41,18 +41,12 @@ support for Rackspace authentication extensions to OpenStack.
 %{__rm} -rf %{buildroot}
 %{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
-#check
-#pushd test
-#PYTHONPATH=../ %{__python} test_%{pkgname}.py
-
 %clean
 %{__rm} -rf %{buildroot}
 
-%files
+%file
 %defattr(-, root, root, -)
-/usr/bin/*
-%{python_sitelib}/%{pkgname}/*
-%{python_sitelib}/python_%{pkgname}-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/*
 
 %changelog
 
