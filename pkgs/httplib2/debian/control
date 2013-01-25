@@ -1,4 +1,4 @@
-Source: python-httplib2
+Source: httplib2
 Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>

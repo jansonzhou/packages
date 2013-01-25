@@ -14,7 +14,7 @@ Summary:        A comprehensive HTTP client library
 Group:          System Environment/Libraries
 License:        MIT
 URL:            http://code.google.com/p/httplib2/
-Source0:        http://httplib2.googlecode.com/files/httplib2-0.6.0.tar.gz
+Source0:        http://httplib2.googlecode.com/files/httplib2-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
