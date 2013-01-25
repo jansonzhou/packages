@@ -51,4 +51,3 @@ Disk Config extension for python-novaclient
 
 %changelog
 
-
