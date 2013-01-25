@@ -63,7 +63,7 @@ https://github.com/nose-devs/nose/tarball/master#egg=nose-dev
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/*
+%{python_sitelib}/%{srcname}/*
 /usr/bin/
 /usr/man/man1/
 
