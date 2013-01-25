@@ -17,7 +17,6 @@ URL:           https://github.com/rackspace/python-novaclient/
 Source0:       http://pypi.python.org/packages/source/p/python-novaclient/python-novaclient-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires: 	python26-setuptools
 Requires:       python26 python26-httplib2 python26-argparse python26-prettytable python26-iso8601
 %else
 BuildRequires: 	python-setuptools
