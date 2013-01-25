@@ -27,10 +27,11 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %description
 
-This is a plugin for OpenStack Clients which provides client support for Rackspace authentication extensions to OpenStack.
+This is a plugin for OpenStack Clients which provides client 
+support for Rackspace authentication extensions to OpenStack.
 
 %prep
-%setup -q -n python-%{pkgname}-%{version}
+%setup -q -n %{pkgname}-%{version}
 %{__rm} -rf tests
 
 %build
