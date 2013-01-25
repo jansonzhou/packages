@@ -1,0 +1,16 @@
+Source: python-novaclient
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-all (>= 2.3.5-11), python-support, python-setuptools, python-prettytable, python-argparse, python-httplib2
+XS-Python-Version: >= 2.5
+Standards-Version: 3.8.4
+
+Package: python-novaclient
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-prettytable, python-argparse, python-httplib2, python-iso8601, python (>= 2.6) | python-simplejson
+XB-Python-Version: ${python:Versions}
+Description: Client library for OpenStack Nova API
+ This is a client for the OpenStack Nova API. 
+ There's a Python API (the novaclient module), and a command-line script (nova). 
+ Each implements 100% of the OpenStack Nova API.

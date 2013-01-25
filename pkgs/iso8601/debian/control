@@ -1,0 +1,15 @@
+Source: python-iso8601
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
+XS-Python-Version: >= 2.5
+Standards-Version: 3.8.4
+
+Package: python-iso8601
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+XB-Python-Version: ${python:Versions}
+Description: Simple module to parse ISO 8601 dates.
+ This module parses the most common forms of ISO 8601 
+ date strings (e.g. 2007-01-14T20:34:22+00:00) into datetime objects. 
