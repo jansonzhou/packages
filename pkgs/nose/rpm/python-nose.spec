@@ -1,7 +1,7 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
-%define pkgname nosetest
-%define srcname nosetest
+%define pkgname nose
+%define srcname nose
 
 Summary:       nose extends unittest to make testing easier 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
@@ -64,6 +64,8 @@ https://github.com/nose-devs/nose/tarball/master#egg=nose-dev
 %files
 %defattr(-, root, root, -)
 %{python_sitelib}/*
+/usr/bin/
+/usr/man/man1/
 
 %changelog
 
