@@ -48,7 +48,6 @@ Behaviour Driven Development for python
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 /usr/bin/
-/usr/man/man1/
 
 %changelog
 
