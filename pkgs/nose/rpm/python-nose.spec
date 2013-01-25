@@ -67,4 +67,3 @@ https://github.com/nose-devs/nose/tarball/master#egg=nose-dev
 
 %changelog
 
-
