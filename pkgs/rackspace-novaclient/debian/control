@@ -25,4 +25,3 @@ Description: Metapackage to install python-novaclient and Rackspace extensions
  * rax_backup_schedule_python_novaclient_ext
  * os_networksv2_python_novaclient_ext
  * rax_default_network_flags_python_novaclient_ext
- 
