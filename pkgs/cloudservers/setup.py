@@ -2,7 +2,7 @@ import setuptools
 
 version = '1.0'
 setuptools.setup(
-    name='python-cloudservers',
+    name='cloudservers',
     version=version,
     license='BSD',
     url='http://pypi.python.org/packages/source/p/python-cloudservers/python-cloudservers-%s.tar.gz' % version,
