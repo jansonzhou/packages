@@ -1,0 +1,11 @@
+prettytable (0.5-2) scalr; urgency=low
+
+  * Rebuild for Scalr
+
+ -- Marat Komarov <marat@scalr.net>  Wed, 22 Dec 2010 19:11:50 +0200
+
+prettytable (0.5-1) unstable; urgency=low
+
+  * Initial release (Closes: #530704)
+
+ -- Sandro Tosi <morph@debian.org>  Wed, 27 May 2009 09:14:57 +0200
