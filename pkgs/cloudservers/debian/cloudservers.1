@@ -1,0 +1,100 @@
+.TH CLOUDSERVERS "1" "March 2010" "cloudservers" "User Commands"
+.SH NAME
+cloudservers \- Command-line interface to the Cloud Servers API.
+.SH SYNOPSIS
+.B "cloudservers"
+[
+.I \-\-username USERNAME
+]
+[
+.I \-\-apikey APIKEY
+]
+.I <subcommand>
+.SH DESCRIPTION
+cloudservers is a command line interface to the Rackspace Cloud Servers
+API.
+.PP
+.SH COMMAND OVERVIEW
+.TP
+.B "cloudservers backup\-schedule"
+Show or edit the backup schedule for a server.
+.TP
+.B "cloudservers backup\-schedule\-delete"
+Delete the backup schedule for a server.
+.TP
+.B "cloudservers boot"
+Boot a new server.
+.TP
+.B "cloudservers delete"
+Immediately shut down and delete a server.
+.TP
+.B "cloudservers flavor\-list"
+Print a list of available 'flavors' (sizes of
+servers).
+.TP
+.B "cloudservers help"
+Display help about this program or one of its subcommands.
+.TP
+.B "cloudservers image\-create"
+Create a new image by taking a snapshot of a running server.
+.TP
+.B "cloudservers image\-delete"
+Delete an image.
+.TP
+.B "cloudservers image\-list"
+Print a list of available images to boot from.
+.TP
+.B "cloudservers ip\-share"
+Share an IP address from the given IP group onto a server.
+.TP
+.B "cloudservers ip\-unshare"
+Stop sharing an given address with a server.
+.TP
+.B "cloudservers ipgroup\-create"
+Create a new IP group.
+.TP
+.B "cloudservers ipgroup\-delete"
+Delete an IP group.
+.TP
+.B "cloudservers ipgroup\-list"
+Show IP groups.
+.TP
+.B "cloudservers ipgroup\-show"
+Show details about a particular IP group.
+.TP
+.B "cloudservers list"
+List active servers.
+.TP
+.B "cloudservers reboot"
+Reboot a server.
+.TP
+.B "cloudservers rebuild"
+Shutdown, re\-image, and re\-boot a server.
+.TP
+.B "cloudservers rename"
+Rename a server.
+.TP
+.B "cloudservers resize"
+Resize a server.
+.TP
+.B "cloudservers resize\-confirm"
+Confirm a previous resize.
+.TP
+.B "cloudservers resize\-revert"
+Revert a previous resize (and return to the previous VM).
+.TP
+.B "cloudservers root\-password"
+Change the root password for a server.
+.TP
+.B "cloudservers show"
+Show details about the given server.
+.SS "Optional arguments:"
+.TP
+\fB\-\-username\fR USERNAME
+Defaults to env[CLOUD_SERVERS_USERNAME].
+.TP
+\fB\-\-apikey\fR APIKEY
+Defaults to env[CLOUD_SERVERS_API_KEY].
+.PP
+See "cloudservers help COMMAND" for help on a specific command.
+.PP

@@ -1,0 +1,19 @@
+python-rackspace-cloudservers (1.0-1) scalr; urgency=low
+
+  * Rebuild for Scalr
+
+ -- Marat Komarov <marat@scalr.net>  Wed, 22 Dec 2010 19:58:39 +0200
+
+python-rackspace-cloudservers (1.0~a5-0ubuntu2) lucid; urgency=low
+
+  * debian/control: Rename to python-rackspace-cloudservers, since this is a
+    Rackspace Cloud specific library (LP: #563434)
+
+ -- Thierry Carrez <thierry.carrez@ubuntu.com>  Tue, 20 Apr 2010 09:03:29 +0200
+
+python-cloudservers (1.0~a5-0ubuntu1) lucid; urgency=low
+
+  * Initial upload. (FFe: LP: #559462)
+
+ -- Soren Hansen <soren@ubuntu.com>  Mon, 29 Mar 2010 22:22:49 -0500
+
