@@ -1,0 +1,53 @@
+Description: Ensure fresh API results from the backend server
+ The Rackspace Cloud Servers API gives cached results by default.
+ This patch adds a GET parameter to the appropriate requests so
+ that the backend server is forced to give a fresh answer.
+Author: Soren Hansen <soren@linux2go.dk>
+Forwarded: http://github.com/sorenh/python-cloudservers/commit/0bcc42cc31718cfbe64cbf916968d4f8a8a18b96
+
+--- python-cloudservers-1.0~a5.orig/tests/test_client.py
++++ python-cloudservers-1.0~a5/tests/test_client.py
+@@ -17,7 +17,7 @@ def test_get():
+     cl = client()
+     with mock.patch_object(httplib2.Http, "request", mock_request):
+         resp, body = cl.get("/hi")
+-        mock_request.assert_called_with("http://example.com/hi", "GET", 
++        mock_request.assert_called_with("http://example.com/hi?", "GET", 
+             headers={"X-Auth-Token": "token", "User-Agent": cl.USER_AGENT})
+         # Automatic JSON parsing
+         assert_equal(body, {"hi":"there"})
+@@ -26,10 +26,10 @@ def test_post():
+     cl = client()
+     with mock.patch_object(httplib2.Http, "request", mock_request):
+         cl.post("/hi", body=[1, 2, 3])
+-        mock_request.assert_called_with("http://example.com/hi", "POST", 
++        mock_request.assert_called_with("http://example.com/hi?", "POST", 
+             headers = {
+                 "X-Auth-Token": "token",
+                 "Content-Type": "application/json",
+                 "User-Agent": cl.USER_AGENT},
+             body = '[1, 2, 3]'
+-        )
+\ No newline at end of file
++        )
+--- python-cloudservers-1.0~a5.orig/cloudservers/client.py
++++ python-cloudservers-1.0~a5/cloudservers/client.py
+@@ -58,6 +58,11 @@ class CloudServersClient(httplib2.Http):
+                 raise ex
+ 
+     def get(self, url, **kwargs):
++        # The Rackspace API returns cached results by default.
++        # We like our responses nice and fresh, though, so we
++        # stick a fake GET parameter on the URL.
++        if not '?' in url:
++            url += '?fresh'
+         return self._cs_request(url, 'GET', **kwargs)
+     
+     def post(self, url, **kwargs):
+@@ -73,4 +78,4 @@ class CloudServersClient(httplib2.Http):
+         headers = {'X-Auth-User': self.user, 'X-Auth-Key': self.apikey}
+         resp, body = self.request(self.AUTH_URL, 'GET', headers=headers)
+         self.management_url = resp['x-server-management-url']
+-        self.auth_token = resp['x-auth-token']
+\ No newline at end of file
++        self.auth_token = resp['x-auth-token']
