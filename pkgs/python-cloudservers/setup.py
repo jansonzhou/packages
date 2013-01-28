@@ -9,4 +9,3 @@ setuptools.setup(
     author='Jacob Kaplan-Moss',
     author_email='jacob@jacobian.org'
 )
-
