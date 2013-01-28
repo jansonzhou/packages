@@ -3,7 +3,7 @@
 %define pkgname wsgi_intercept 
 %define srcname wsgi_intercept
 
-Summary:       installs a WSGI application in place of a real URI for testing 
+Summary:       Installs a WSGI application in place of a real URI for testing 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Name:          python26-%{pkgname}
 %else

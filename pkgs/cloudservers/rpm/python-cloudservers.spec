@@ -57,3 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 * Thu Dec 17 2010 Marat Komarov <marat@scalr.net> 1.0-1
 - Initial package build
 
+
