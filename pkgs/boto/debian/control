@@ -1,0 +1,21 @@
+Source: python-boto
+Section: python
+Priority: extra
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 6), python (>= 2.5), python-all-dev (>= 2.5), python-support (>= 0.7.5)
+Standards-Version: 3.7.3
+Homepage: http://code.google.com/p/boto
+
+Package: python-boto
+Architecture: all 
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Provides: ${python:Provides}
+Description: Python interface to Amazon's Web Services
+ An integrated interface to current and future infrastructural services offered by Amazon Web Services. Includes:
+ * Simple Storage Service (S3)
+ * Simple Queue Service (SQS)
+ * Elastic Compute Cloud (EC2)
+ * Mechanical Turk
+ * SimpleDB (SDB)
+ * CloudFront
+ * Virtual Private Cloud (VPC)
