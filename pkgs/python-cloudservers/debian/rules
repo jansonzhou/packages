@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+DEB_PYTHON_SYSTEM = pysupport
+include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/python-distutils.mk
+
+clean::
+	rm -f dist/python_cloudservers-1.0a5-py2.6.egg test-stamp || /bin/true
+	find . -name '._*' -print0 | xargs -0 rm || /bin/true
+
+build/python-rackspace-cloudservers:: test-stamp
+
+test-stamp:
+#	@nosetests $(CURDIR)/tests
+	touch test-stamp
