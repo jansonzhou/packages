@@ -19,7 +19,7 @@ BuildRoot:      %{_tmppath}/python-%{pkgname}-%{version}-%{release}-root-%(%{__i
 
 BuildArch:      noarch
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires:	python26-setuptools
+#BuildRequires:	python26-setuptools
 Requires:		python26
 %endif
 %if 0%{?fedora} || 0%{?rhel} >= 6
