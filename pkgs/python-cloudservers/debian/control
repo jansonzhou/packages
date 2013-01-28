@@ -2,7 +2,7 @@ Source: python-rackspace-cloudservers
 Section: python
 Priority: optional
 Maintainer: Soren Hansen <soren@ubuntu.com>
-Build-Depends: cdbs, debhelper (>= 5.0.38)
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-prettytable
 #python-all (>= 2.3.5-11), python-support, python-distribute, python-nose, python-prettytable, python-argparse, python-mock, python-httplib2
 XS-Python-Version: >= 2.5
 Standards-Version: 3.8.4
