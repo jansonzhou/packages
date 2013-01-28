@@ -1,0 +1,25 @@
+Source: python-rackspace-cloudfiles
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+XSBC-Original-Maintainer: Soren Hansen <soren@ubuntu.com>, Chmouel Boudjnah <chmouel.boudjnah@rackspace.co.uk>
+Build-Depends: python-setuptools (>= 0.6a9), debhelper (>= 5.0.38), cdbs (>= 0.4.49), python-support (>= 0.7.1), quilt
+Build-Depends-Indep: python-nose
+Homepage: http://github.com/rackspace/python-cloudfiles/
+Standards-Version: 3.8.0
+
+Package: python-rackspace-cloudfiles
+Architecture: all
+Depends: ${python:Depends}, python-pkg-resources, ${misc:Depends}
+Replaces: python-cloudfiles
+Conflicts: python-cloudfiles
+Description: Rackspace Cloud Files Python API
+ The Rackspace Cloud Files is an affordable, redundant, scalable, and
+ dynamic storage service offering. The core storage system is designed
+ to provide a safe, secure, automatically re-sizing and network accessible
+ way to store data. You can store an unlimited quantity of files and each
+ one can be as large as 5 gigabytes. Users can store as much as they want
+ and pay only for storage space they actually use.
+ .
+ This is the official API for the Python language.
+

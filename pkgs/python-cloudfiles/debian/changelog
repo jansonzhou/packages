@@ -1,0 +1,28 @@
+python-rackspace-cloudfiles (1.5.1-1) scalr; urgency=low
+
+  * Rebuild package for Scalr
+
+ -- Marat Komarov <marat@scalr.net>  Wed, 22 Dec 2010 14:01:32 +0200
+
+python-rackspace-cloudfiles (1.5.1-0ubuntu2) lucid; urgency=low
+
+  * debian/control: Rename to python-rackspace-cloudfiles, since this is a
+    Rackspace Cloud specific library (LP: #563428)
+
+ -- Thierry Carrez <thierry.carrez@ubuntu.com>  Tue, 20 Apr 2010 09:48:32 +0200
+
+python-cloudfiles (1.5.1-0ubuntu1) lucid; urgency=low
+
+  * New upstream release.
+  * Initial upload to Ubuntu.
+  * Added 0001_json_syntax.patch and 
+    0002_InvalidObjectName_unit_test.patch to fix up the unit tests.
+  * Run unit tests at build time.
+
+ -- Soren Hansen <soren@ubuntu.com>  Mon, 02 Nov 2009 16:28:31 +0100
+
+python-cloudfiles (1.4.0) stable; urgency=low
+
+  * Initial package.
+
+ -- Chmouel Boudjnah <chmouel.boudjnah@rackspace.co.uk>  Thu, 27 Aug 2009 16:15:22 +0100
