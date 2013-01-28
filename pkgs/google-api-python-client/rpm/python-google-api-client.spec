@@ -17,7 +17,7 @@ URL:			http://code.google.com/p/google-api-python-client
 Source:			http://google-api-python-client.googlecode.com/files/google-api-python-client-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires:	python26-devel
+#BuildRequires:	python26-devel
 Requires:		python26 python26-httplib2 python26-gflags
 %endif
 %if 0%{?fedora} || 0%{?rhel} >= 6
