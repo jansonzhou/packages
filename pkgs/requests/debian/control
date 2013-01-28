@@ -1,0 +1,14 @@
+Source: python-requests
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
+XS-Python-Version: >= 2.5
+Standards-Version: 3.8.4
+
+Package: python-requests
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+XB-Python-Version: ${python:Versions}
+Description: A Python Mocking and Patching Library for Testing
+ mock is a library for testing in Python. It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used
