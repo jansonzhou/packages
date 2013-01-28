@@ -17,11 +17,11 @@ URL:			http://pypi.python.org/pypi/python-cloudservers
 Source:			http://pypi.python.org/packages/source/p/python-cloudservers/python-%{pkgname}-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires:	python26-devel
+#BuildRequires:	python26-devel
 Requires:		python26 python26-httplib2 python26-argparse python26-prettytable
 %endif
 %if 0%{?fedora} >= 8
-BuildRequires:  python-devel >= 2.5
+#BuildRequires:  python-devel >= 2.5
 Requires:		python >= 2.5 python-httplib2 python-argparse python-prettytable
 %endif
 
