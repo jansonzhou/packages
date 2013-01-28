@@ -45,10 +45,7 @@ mock is a library for testing in Python. It allows you to replace parts of your 
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{srcname}/*
-%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
-/usr/bin/
-/usr/man/man1/
+%{python_sitelib}/*
 
 %changelog
 
