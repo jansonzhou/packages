@@ -17,10 +17,10 @@ Source0:        http://pypi.python.org/packages/source/P/PrettyTable/prettytable
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires: 	python26-devel
+#BuildRequires: 	python26-devel
 Requires:       python26
 %else
-BuildRequires: 	python-devel >= 2.5
+#BuildRequires: 	python-devel >= 2.5
 Requires:       python >= 2.5
 %endif
 BuildArch:      noarch
