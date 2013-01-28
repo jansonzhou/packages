@@ -14,7 +14,7 @@ Release:		1%{?dist}
 License:		MIT
 Group:			Development/Libraries
 URL:			http://pypi.python.org/pypi/python-cloudservers
-Source:			http://pypi.python.org/packages/source/p/python-cloudservers/python-%{pkgname}-%{version}.tar.gz
+Source:			http://pypi.python.org/packages/source/p/python-cloudservers/python-cloudservers-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 #BuildRequires:	python26-devel
