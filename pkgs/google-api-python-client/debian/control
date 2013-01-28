@@ -1,0 +1,17 @@
+Source: python-google-api-client
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Homepage: http://google-api-python-client.googlecode.com
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-all (>= 2.3.5-11), python-support, python-setuptools, python-httplib2
+XS-Python-Version: >= 2.5
+Standards-Version: 3.8.4
+
+Package: python-google-api-client
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-httplib2, python-gflags
+XB-Python-Version: ${python:Versions}
+Description: Google API Client Library for Python
+ The Google API Client for Python is a client library for
+ accessing the Plus, Moderator, and many other Google APIs.
+
