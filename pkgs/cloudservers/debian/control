@@ -3,7 +3,7 @@ Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>
 XSBC-Original-Maintainer: Soren Hansen <soren@ubuntu.com>
-Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev, python-support, python-setuptools, prettytable, argparse, httplib2
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev, python-support, python-setuptools, python-prettytable, python-argparse, python-httplib2
 XS-Python-Version: >= 2.5
 Standards-Version: 3.8.4
 

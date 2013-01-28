@@ -10,5 +10,5 @@ Package: python-requests
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
 XB-Python-Version: ${python:Versions}
-Description: A Python Mocking and Patching Library for Testing
- mock is a library for testing in Python. It allows you to replace parts of your system under test with mock objects and make assertions about how they have been used
+Description: Requests is an Apache2 Licensed HTTP library, written in Python, for human beings
+ Most existing Python modules for sending HTTP requests are extremely verbose and cumbersome. Python's builtin urllib2 module provides most of the HTTP capabilities you should need, but the api is thoroughly broken. It requires an enormous amount of work (even method overrides) to perform the simplest of tasks.

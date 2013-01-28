@@ -1,4 +1,4 @@
-Source: prettytable
+Source: python-prettytable
 Section: python
 Priority: optional
 Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
