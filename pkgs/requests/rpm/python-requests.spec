@@ -45,7 +45,8 @@ Most existing Python modules for sending HTTP requests are extremely verbose and
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{pkgname}/*
+%{python_sitelib}/%{srcname}/*
+%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
