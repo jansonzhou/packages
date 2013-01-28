@@ -1,9 +1,3 @@
-python-rackspace-cloudservers (1.0-1) scalr; urgency=low
-
-  * Rebuild for Scalr
-
- -- Marat Komarov <marat@scalr.net>  Wed, 22 Dec 2010 19:58:39 +0200
-
 python-rackspace-cloudservers (1.0~a5-0ubuntu2) lucid; urgency=low
 
   * debian/control: Rename to python-rackspace-cloudservers, since this is a
