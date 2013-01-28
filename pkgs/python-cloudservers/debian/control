@@ -10,8 +10,8 @@ Standards-Version: 3.8.4
 Package: python-rackspace-cloudservers
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-prettytable, python-argparse, python-httplib2, python (>= 2.6) | python-simplejson
-Replaces: python-cloudservers
-Conflicts: python-cloudservers
+#Replaces: python-cloudservers
+#Conflicts: python-cloudservers
 XB-Python-Version: ${python:Versions}
 Description: client library for Rackspace's Cloud Servers API
  Python library and CLI tool for interacting with Rackspace's Cloud
