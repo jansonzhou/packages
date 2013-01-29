@@ -1,5 +1,4 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
-%{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 
 %global _use_internal_dependency_generator 0
 
@@ -40,7 +39,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{python_sitearch}/pymysql
+%{python_sitearch}/pymysql/*
 %{python_sitearch}/%{upstream_name}-%{version}-*.egg-info
 
 %changelog
