@@ -40,6 +40,7 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root,-)
 %{python_sitearch}/pymysql
+%{python_sitearch}/%{upstream_name}/*
 %{python_sitearch}/%{upstream_name}-%{version}-*.egg-info
 
 %changelog
