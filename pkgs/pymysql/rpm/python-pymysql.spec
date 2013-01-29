@@ -39,8 +39,8 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%{python_sitearch}/pymysql/*
-%{python_sitearch}/%{upstream_name}-%{version}-*.egg-info
+%{python_sitelib}/pymysql/*
+%{python_sitelib}/%{upstream_name}-%{version}-*.egg-info
 
 %changelog
 * Thu May 17 2012 Oleg Suharev <oleg@scalr.com> - 0.5-1
