@@ -2,7 +2,7 @@ import setuptools
 
 version = '0.5'
 setuptools.setup(
-    name='pymysql',
+    name='PyMySQL',
     version=version,
     url='http://pypi.python.org/packages/source/P/PyMySQL/PyMySQL-%s.tar.gz' % version,
     license='MIT',
