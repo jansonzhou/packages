@@ -1,4 +1,4 @@
-Source: python-mysql
+Source: python-pymysql
 Section: python
 Priority: extra
 Maintainer: Scalr Inc. <packages@scalr.net>
@@ -6,7 +6,7 @@ Build-Depends: cdbs, debhelper (>= 6), python (>= 2.5), python-dev (>= 2.5), pyt
 Standards-Version: 3.7.3
 Homepage: https://github.com/petehunt/PyMySQL
 
-Package: python-mysql
+Package: python-pymysql
 Architecture: all 
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
 Provides: ${python:Provides}
