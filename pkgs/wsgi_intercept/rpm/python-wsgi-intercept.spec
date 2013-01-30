@@ -1,6 +1,6 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
-%define pkgname wsgi_intercept 
+%define pkgname wsgi-intercept 
 %define srcname wsgi_intercept
 
 Summary:       Installs a WSGI application in place of a real URI for testing 
@@ -12,7 +12,7 @@ Name:          python-%{pkgname}
 
 Version:       0.5.1
 Release:       1%{?dist}
-License:       ASL 2.0
+License:       MIT
 Group:         Development/Languages
 Source0:       http://pypi.python.org/packages/source/w/wsgi_intercept/wsgi_intercept-%{version}.tar.gz
 
