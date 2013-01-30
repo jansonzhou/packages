@@ -11,7 +11,7 @@ Name:			python-%{pkgname}
 
 Version:		1.0c2
 Release:		1%{?dist}
-License:		MIT
+License:        ASL 2.0
 Group:			Development/Libraries
 URL:			http://code.google.com/p/google-api-python-client
 Source:			http://google-api-python-client.googlecode.com/files/google-api-python-client-%{version}.tar.gz
