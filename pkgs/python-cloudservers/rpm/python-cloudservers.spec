@@ -1,5 +1,5 @@
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
-%define pkgname cloudservers
+%define pkgname rackspace-cloudservers
 
 Summary:		Python language bindings for Cloud Servers API 
 
