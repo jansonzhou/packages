@@ -1,5 +1,6 @@
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %define pkgname rackspace-cloudservers
+%define srcname cloudservers
 
 Summary:		Python language bindings for Cloud Servers API 
 
@@ -35,7 +36,7 @@ Make a new server for staging and four new servers for production.
 Delete one, create three more. You only pay for what you use! 
 
 %prep
-%setup -q -n python-%{pkgname}-%{version}
+%setup -q -n python-%{srcname}-%{version}
 
 %build
 %{__python} setup.py build
@@ -56,5 +57,3 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Thu Dec 17 2010 Marat Komarov <marat@scalr.net> 1.0-1
 - Initial package build
-
-
