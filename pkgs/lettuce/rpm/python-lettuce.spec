@@ -10,9 +10,9 @@ Name:          python26-%{pkgname}
 Name:          python-%{pkgname}
 %endif
 
-Version:       0.2.12
+Version:       0.2.13
 Release:       1%{?dist}
-License:       ASL 2.0
+License:       GPL 3.0
 Group:         Development/Languages
 Source0:       http://pypi.python.org/packages/source/l/lettuce/lettuce-%{version}.tar.gz
 
