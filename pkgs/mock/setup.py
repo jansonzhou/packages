@@ -1,6 +1,6 @@
 import setuptools
 
-version = '1.0.1'
+version = '0.8.0'
 setuptools.setup(
     name='mock',
     version=version,
