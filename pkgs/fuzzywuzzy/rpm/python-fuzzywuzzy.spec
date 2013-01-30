@@ -12,7 +12,7 @@ Name:          python-%{pkgname}
 
 Version:       0.1
 Release:       1%{?dist}
-License:       ASL 2.0
+License:       unknown
 Group:         Development/Languages
 Source0:       http://pypi.python.org/packages/source/f/fuzzywuzzy/fuzzywuzzy-%{version}.tar.gz
 
