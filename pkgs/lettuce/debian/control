@@ -9,6 +9,8 @@ Standards-Version: 3.8.4
 Package: python-lettuce
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+  python-sure,
+  python-fuzzywuzzy
 XB-Python-Version: ${python:Versions}
 Description: Behaviour Driven Development for python
  Behaviour Driven Development for python
