@@ -10,7 +10,7 @@ Name:           python26-%{pkgname}
 Name:           python-%{pkgname}
 %endif
 
-Version:       1.2.0
+Version:       0.1.1
 Release:       1%{?dist}
 License:       ASL 2.0
 Group:         Development/Languages
