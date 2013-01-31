@@ -34,7 +34,7 @@ And, in an industry first, you can deliver that content to your users
 at blazing speeds over Limelight Network's content delivery network (CDN). 
 
 %prep
-%setup -q -n python-%{srcname}
+%setup -q -n python-%{srcname}-%{version}
 
 %build
 %{__python} setup.py build
