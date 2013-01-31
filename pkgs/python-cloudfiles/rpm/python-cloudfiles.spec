@@ -18,10 +18,10 @@ URL:			https://github.com/rackspace/python-cloudfiles
 Source:			http://pypi.python.org/packages/source/p/python-cloudfiles/python-cloudfiles-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires:	python26-devel
+#BuildRequires:	python26-devel
 Requires:		python26
 %else
-BuildRequires:  python-devel >= 2.5
+#BuildRequires:  python-devel >= 2.5
 Requires:		python >= 2.5
 %endif
 
