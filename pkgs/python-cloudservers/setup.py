@@ -1,6 +1,6 @@
 import setuptools
 
-version = '1.0'
+version = '1.2'
 setuptools.setup(
     name='python-cloudservers',
     version=version,
