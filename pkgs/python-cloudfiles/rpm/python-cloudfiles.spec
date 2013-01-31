@@ -15,7 +15,7 @@ Release:		1%{?dist}
 License:		MIT
 Group:			Development/Libraries
 URL:			https://github.com/rackspace/python-cloudfiles
-Source:			python-cloudfiles.tar.gz
+Source:			http://pypi.python.org/packages/source/p/python-cloudfiles/python-cloudfiles-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 BuildRequires:	python26-devel
