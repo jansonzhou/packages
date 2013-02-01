@@ -10,9 +10,9 @@ Name:          python26-%{pkgname}
 Name:          python-%{pkgname}
 %endif
 
-Version:       1.1.5
+Version:       1.1.6
 Release:       1%{?dist}
-License:       LGPL 3.0
+License:       GPLv3
 Group:         Development/Languages
 Source0:       http://pypi.python.org/packages/source/s/sure/sure-%{version}.tar.gz
 
