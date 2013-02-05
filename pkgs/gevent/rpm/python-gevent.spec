@@ -19,7 +19,7 @@ Source0:       https://github.com/downloads/SiteSupport/gevent/gevent-%{version}
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
 %else
-BuildRequires: 	python-setuptools
+BuildRequires: 	python-setuptools, python-devel >= 2.5
 Requires:       python >= 2.5
 %endif
 BuildArch:     noarch
