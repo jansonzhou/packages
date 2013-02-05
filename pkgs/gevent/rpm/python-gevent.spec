@@ -29,7 +29,17 @@ BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %description
-gevent is a coroutine-based Python networking library that uses greenlet to provide a high-level synchronous API on top of the libevent event loop
+gevent is a coroutine-based Python networking library that uses greenlet to
+provide a high-level synchronous API on top of libevent event loop.
+
+Features include:
+
+  * convenient API around greenlets
+  * familiar synchronization primitives (gevent.event, gevent.queue)
+  * socket module that cooperates
+  * WSGI server on top of libevent-http
+  * DNS requests done through libevent-dns
+  * monkey patching utility to get pure Python modules to cooperate
 
 %prep
 %setup -q -n %{srcname}-%{version}
