@@ -22,7 +22,7 @@ BuildArch:      noarch
 Requires:		python26
 %endif
 %if 0%{?fedora} || 0%{?rhel} >= 6
-BuildRequires:  python-setuptools, python-devel >= 2.5
+BuildRequires:  python-setuptools, python-devel >= 2.5, libevent-devel >= 1.4.0
 Requires:		python >= 2.5
 %endif
 BuildArch:     noarch
