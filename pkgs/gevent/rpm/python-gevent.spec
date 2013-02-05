@@ -10,8 +10,8 @@ Name:          python26-%{pkgname}
 Name:          python-%{pkgname}
 %endif
 
-Version:       1.0rc2
-Release:       1%{?dist}
+Version:       1.0
+Release:       rc2
 License:       MIT
 Group:         Development/Languages
 Source0:       https://github.com/downloads/SiteSupport/gevent/gevent-%{version}.tar.gz
