@@ -16,11 +16,14 @@ License:       MIT
 Group:         Development/Languages
 Source0:       https://github.com/downloads/SiteSupport/gevent/gevent-%{version}.tar.gz
 
+BuildArch:      noarch
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Requires:       python26 
-%else
-BuildRequires: 	python-setuptools, python-devel >= 2.5
-Requires:       python >= 2.5
+#BuildRequires:	python26-setuptools
+Requires:		python26
+%endif
+%if 0%{?fedora} || 0%{?rhel} >= 6
+BuildRequires:  python-setuptools, python-devel >= 2.5
+Requires:		python >= 2.5
 %endif
 BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
