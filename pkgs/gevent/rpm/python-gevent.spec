@@ -14,7 +14,7 @@ Version:       1.0rc2
 Release:       1%{?dist}
 License:       MIT
 Group:         Development/Languages
-Source0:       https://github.com/SiteSupport/gevent/archive/%{version}.zip
+Source0:       https://github.com/downloads/SiteSupport/gevent/gevent-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
