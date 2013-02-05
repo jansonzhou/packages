@@ -9,3 +9,4 @@ setuptools.setup(
     author='Denis Bilenko',
     author_email='denis.bilenko@gmail.com'
 )
+
