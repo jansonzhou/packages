@@ -49,4 +49,3 @@ gevent is a coroutine-based Python networking library that uses greenlet to prov
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
-
