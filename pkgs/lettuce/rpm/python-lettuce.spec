@@ -50,4 +50,3 @@ Behaviour Driven Development for python
 /usr/bin/
 
 %changelog
-
