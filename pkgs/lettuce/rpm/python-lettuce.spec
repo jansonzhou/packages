@@ -10,11 +10,11 @@ Name:          python26-%{pkgname}
 Name:          python-%{pkgname}
 %endif
 
-Version:       0.2.13
+Version:       0.2.14
 Release:       1%{?dist}
 License:       GPL 3.0
 Group:         Development/Languages
-Source0:       http://pypi.python.org/packages/source/l/lettuce/lettuce-%{version}.tar.gz
+#Source0:       http://pypi.python.org/packages/source/l/lettuce/lettuce-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
