@@ -18,9 +18,11 @@ Source0:       http://pypi.python.org/packages/source/p/python-swiftclient/pytho
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
+Requires:       python26-setuptools
 %else
 BuildRequires: 	python-setuptools
 Requires:       python >= 2.5
+Requires:       python-setuptools
 %endif
 BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
