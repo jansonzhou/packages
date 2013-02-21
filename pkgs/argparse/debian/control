@@ -1,4 +1,4 @@
-Source: argparse
+Source: python-argparse
 Priority: optional
 Section: python
 Maintainer: Scalr Inc. <packages@scalr.net>
