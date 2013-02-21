@@ -8,7 +8,7 @@ Standards-Version: 3.8.4
 
 Package: python-keystoneclient
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-setuptools, python-requests (<< 1.0), python-iso8601
 XB-Python-Version: ${python:Versions}
 Description: Client library for OpenStack Identity API (Keystone)
  Python bindings to the OpenStack Identity API (Keystone)
