@@ -47,5 +47,7 @@ Python bindings to the OpenStack Identity API (Keystone)
 %defattr(-, root, root, -)
 %{python_sitelib}/%{pkgname}/*
 %{python_sitelib}/python_%{pkgname}-%{version}-py%{pyver}.egg-info
+/usr/bin
+/usr/keystoneclient
 
 %changelog
