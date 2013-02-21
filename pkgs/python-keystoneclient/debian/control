@@ -11,4 +11,5 @@ Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
 XB-Python-Version: ${python:Versions}
 Description: Client library for OpenStack Identity API (Keystone)
-Python bindings to the OpenStack Identity API (Keystone)
+ Python bindings to the OpenStack Identity API (Keystone)
+
