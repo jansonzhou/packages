@@ -1,6 +1,6 @@
 import setuptools
 
-version = '1.1.0'
+version = '0.14.2'
 setuptools.setup(
     name='requests',
     version=version,
