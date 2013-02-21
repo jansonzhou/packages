@@ -19,7 +19,7 @@ Description: optparse-inspired command-line parsing library
  same time, it retains the ease and flexibility of use that made
  optparse so popular
 
-Package: python-argparse
+Package: python-argparse-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
