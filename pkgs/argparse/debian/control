@@ -1,22 +1,15 @@
 Source: python-argparse
-Priority: optional
 Section: python
+Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>
-XSBC-Original-Maintainer: Ritesh Raj Sarraf <rrs@researchut.com>
-Uploaders: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Build-Depends: debhelper (>= 6), python
-Build-Depends-Indep: python-support
-Standards-Version: 3.8.0
-XS-Python-Version: >=2.4
-Vcs-Svn: svn://svn.debian.org/svn/python-modules/packages/argparse/trunk
-Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/argparse/trunk/
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
+XS-Python-Version: >= 2.5
+Standards-Version: 3.8.4
 Homepage: http://code.google.com/p/argparse/
 
 Package: python-argparse
 Architecture: all
-Depends: ${python:Depends}, ${misc:Depends}
-Provides: ${python:Provides}
-Suggests: python-argparse-doc
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
 XB-Python-Version: ${python:Versions}
 Description: optparse-inspired command-line parsing library
  Argparse takes the best of the optparse command-line parsing module
@@ -26,11 +19,11 @@ Description: optparse-inspired command-line parsing library
  same time, it retains the ease and flexibility of use that made
  optparse so popular
 
-Package: python-argparse-doc
+Package: python-argparse
 Section: doc
 Architecture: all
-Recommends: python-argparse, doc-base
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+XB-Python-Version: ${python:Versions}
 Replaces: python-argparse (<< 1.0.1-2)
 Description: optparse-inspired command-line parsing library - doc
  Argparse takes the best of the optparse command-line parsing module
@@ -41,4 +34,3 @@ Description: optparse-inspired command-line parsing library - doc
  optparse so popular
  .
  This package contains the library documentation for python-argparse
-
