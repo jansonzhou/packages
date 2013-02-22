@@ -1,37 +1,31 @@
-Source: python-argparse
+Package: python-argparse
+Source: argparse
+Version: 1.2.1-1
+Architecture: all
+Maintainer: Steven Bethard <steven.bethard@gmail.com>
+Installed-Size: 127
+Depends: python, python-support (>= 0.90.0)
+Provides: python2.7-argparse
 Section: python
 Priority: optional
-Maintainer: Scalr Inc. <packages@scalr.net>
-Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
-XS-Python-Version: >= 2.5
-Standards-Version: 3.8.4
-Homepage: http://code.google.com/p/argparse/
-
-Package: python-argparse
-Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
-XB-Python-Version: ${python:Versions}
-Description: optparse-inspired command-line parsing library
- Argparse takes the best of the optparse command-line parsing module
- and brings it new life. Argparse adds positional as well as
- optional arguments, the ability to create parsers for sub-commands,
- more informative help and usage messages, and much more. At the
- same time, it retains the ease and flexibility of use that made
- optparse so popular
-
-Package: python-argparse-doc
-Section: doc
-Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
-XB-Python-Version: ${python:Versions}
-Replaces: python-argparse (<< 1.0.1-2)
-Description: optparse-inspired command-line parsing library - doc
- Argparse takes the best of the optparse command-line parsing module
- and brings it new life. Argparse adds positional as well as
- optional arguments, the ability to create parsers for sub-commands,
- more informative help and usage messages, and much more. At the
- same time, it retains the ease and flexibility of use that made
- optparse so popular
+Description: Python command-line parsing library
+ The argparse module makes it easy to write user friendly command line
+ interfaces.
  .
- This package contains the library documentation for python-argparse
-
+ The program defines what arguments it requires, and argparse will figure out
+ how to parse those out of sys.argv. The argparse module also automatically
+ generates help and usage messages and issues errors when users give the
+ program invalid arguments.
+ .
+ As of Python >= 2.7 and >= 3.2, the argparse module is maintained within the
+ Python standard library. For users who still need to support Python < 2.7 or
+ < 3.2, it is also provided as a separate package, which tries to stay
+ compatible with the module in the standard library, but also supports older
+ Python versions.
+ .
+ argparse is licensed under the Python license, for details see LICENSE.txt.
+ .
+ .
+ Compatibility
+ -------------
+Python-Version: 2.7
