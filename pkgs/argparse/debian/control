@@ -1,12 +1,15 @@
-Package: python-argparse
 Source: argparse
-Version: 1.2.1-1
-Architecture: all
 Maintainer: Steven Bethard <steven.bethard@gmail.com>
-Depends: python, python-support (>= 0.90.0)
-Provides: python2.7-argparse
 Section: python
 Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), debhelper (>= 7), python-support (>= 0.8.4)
+Standards-Version: 3.8.4
+
+Package: python-argparse
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+XB-Python-Version: ${python:Versions}
+Provides: ${python:Provides}
 Description: Python command-line parsing library
  The argparse module makes it easy to write user friendly command line
  interfaces.
@@ -23,3 +26,8 @@ Description: Python command-line parsing library
  Python versions.
  .
  argparse is licensed under the Python license, for details see LICENSE.txt.
+ .
+ .
+ Compatibility
+ -------------
+ .
