@@ -3,7 +3,6 @@ Source: argparse
 Version: 1.2.1-1
 Architecture: all
 Maintainer: Steven Bethard <steven.bethard@gmail.com>
-Installed-Size: 127
 Depends: python, python-support (>= 0.90.0)
 Provides: python2.7-argparse
 Section: python
@@ -24,8 +23,3 @@ Description: Python command-line parsing library
  Python versions.
  .
  argparse is licensed under the Python license, for details see LICENSE.txt.
- .
- .
- Compatibility
- -------------
-Python-Version: 2.7
