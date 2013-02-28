@@ -1,0 +1,14 @@
+Source: python-ipdb
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
+XS-Python-Version: >= 2.5
+Standards-Version: 3.8.4
+
+Package: python-ipdb
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+XB-Python-Version: ${python:Versions}
+Description: IPython-enabled pdb
+ ipdb exports functions to access the IPython debugger, which features tab completion, syntax highlighting, better tracebacks, better introspection with the same interface as the pdb module.
