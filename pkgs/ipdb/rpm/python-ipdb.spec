@@ -45,6 +45,7 @@ ipdb exports functions to access the IPython debugger, which features tab comple
 
 %files
 %defattr(-, root, root, -)
+/usr/bin
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
