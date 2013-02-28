@@ -10,3 +10,4 @@ setuptools.setup(
     author='Gabriel Falcao',
     author_email='gabriel@nacaolivre.org'
 )
+
