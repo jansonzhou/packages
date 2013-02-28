@@ -20,7 +20,7 @@ Source0:       http://pypi.python.org/packages/source/l/lettuce/lettuce-%{versio
 Requires:       python26 
 %else
 BuildRequires: 	python-setuptools
-Requires:       python >= 2.5
+Requires:       python >= 2.5 python-sure python-fuzzywuzzy
 %endif
 BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
