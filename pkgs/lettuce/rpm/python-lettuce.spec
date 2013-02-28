@@ -17,10 +17,10 @@ Group:         Development/Languages
 Source0:       http://pypi.python.org/packages/source/l/lettuce/lettuce-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Requires:       python26 python-sure python-fuzzywuzzy 
+Requires:       python26 python-sure python-fuzzywuzzy python-ipdb
 %else
 BuildRequires: 	python-setuptools
-Requires:       python >= 2.5 python-sure python-fuzzywuzzy
+Requires:       python >= 2.5 python-sure python-fuzzywuzzy python-ipdb
 %endif
 BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
