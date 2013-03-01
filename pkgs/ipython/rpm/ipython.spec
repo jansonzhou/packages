@@ -54,6 +54,7 @@ A high-performance library for high level and interactive parallel computing tha
 /usr/bin
 %{python_sitelib}/IPython/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
+/usr/share/doc/%{srcname}/*
 
 %changelog
 
