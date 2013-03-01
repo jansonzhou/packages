@@ -17,7 +17,7 @@ Group:         Development/Languages
 Source0:       http://pypi.python.org/packages/source/l/lettuce/lettuce-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Requires:       python26 python-sure python-fuzzywuzzy python-ipdb
+Requires:       python26 python26-sure python26-fuzzywuzzy python26-ipdb
 %else
 BuildRequires: 	python-setuptools
 Requires:       python >= 2.5 python-sure python-fuzzywuzzy python-ipdb
