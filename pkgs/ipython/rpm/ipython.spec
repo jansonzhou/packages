@@ -5,9 +5,9 @@
 
 Summary:       IPython: Productive Interactive Computing
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Name:          python26-%{pkgname}
+Name:          %{pkgname}
 %else
-Name:          python-%{pkgname}
+Name:          %{pkgname}
 %endif
 
 Version:       0.13.1
@@ -52,8 +52,8 @@ A high-performance library for high level and interactive parallel computing tha
 %files
 %defattr(-, root, root, -)
 /usr/bin
-%{python_sitelib}/%{srcname}/*
-%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/IPython/*
+%{python_sitelib}/IPython-%{version}-py%{pyver}.egg-info
 
 %changelog
 
