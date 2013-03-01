@@ -53,7 +53,7 @@ A high-performance library for high level and interactive parallel computing tha
 %defattr(-, root, root, -)
 /usr/bin
 %{python_sitelib}/IPython/*
-%{python_sitelib}/IPython-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
