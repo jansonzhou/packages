@@ -47,7 +47,7 @@ Behaviour Driven Development for python
 %defattr(-, root, root, -)
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
-/usr/bin/
+/usr/local/bin/
 
 %changelog
 
