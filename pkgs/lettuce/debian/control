@@ -11,6 +11,8 @@ Architecture: all
 Depends: ${misc:Depends}, ${python:Depends},
   python-sure,
   python-fuzzywuzzy,
+  python-ipdb,
+  ipython >= 0.1
 XB-Python-Version: ${python:Versions}
 Description: Behaviour Driven Development for python
  Behaviour Driven Development for python

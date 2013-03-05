@@ -37,7 +37,7 @@ Behaviour Driven Development for python
 
 %install
 %{__rm} -rf %{buildroot}
-%{__python} setup.py install -O1 --skip-build --root %{buildroot} --prefix=/usr/local
+%{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
 
 %clean
@@ -47,7 +47,7 @@ Behaviour Driven Development for python
 %defattr(-, root, root, -)
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
-/usr/local/bin/
+/usr/bin/
 
 %changelog
 
