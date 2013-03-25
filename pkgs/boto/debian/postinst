@@ -2,8 +2,8 @@
 
 # Automatically added by dh_pysupport
 if which update-python-modules >/dev/null 2>&1; then
-	if test -f /usr/share/python-support/boto.public; then
-		update-python-modules -v --post-install /usr/share/python-support/boto.public
+	if test -f /usr/share/python-support/python-boto.public; then
+		update-python-modules -v --post-install /usr/share/python-support/python-boto.public
 	else
 		update-python-modules boto
 	fi
