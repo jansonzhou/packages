@@ -6,3 +6,4 @@ setuptools.setup(
     version=version,
     url='http://pypi.python.org/packages/source/o/os_diskconfig_python_novaclient_ext/os_diskconfig_python_novaclient_ext-%s.tar.gz' % version
  )
+
