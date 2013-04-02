@@ -6,3 +6,4 @@ setuptools.setup(
     version=version,
     url='http://pypi.python.org/packages/source/r/rackspace-auth-openstack/rackspace-auth-openstack-%s.tar.gz' % version
 )
+
