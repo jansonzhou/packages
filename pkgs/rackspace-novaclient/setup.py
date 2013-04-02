@@ -6,3 +6,4 @@ setuptools.setup(
     version=version,
     url='http://pypi.python.org/packages/source/r/rackspace-novaclient/rackspace-novaclient-%s.tar.gz' % version
 )
+
