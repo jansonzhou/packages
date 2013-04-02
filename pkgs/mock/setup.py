@@ -9,3 +9,4 @@ setuptools.setup(
     author='Michael Foord',
     author_email='michael@voidspace.org.uk'
 )
+
