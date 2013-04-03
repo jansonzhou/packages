@@ -9,4 +9,3 @@ setuptools.setup(
     author='Rackspace',
     author_email='jkoelker@rackspace.com, matt.dietz@rackspace.com'
 )
-
