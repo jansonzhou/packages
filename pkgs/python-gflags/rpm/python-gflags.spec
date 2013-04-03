@@ -21,8 +21,7 @@ BuildArch:      noarch
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 #BuildRequires:	python26-setuptools
 Requires:		python26
-%endif
-%if 0%{?fedora} || 0%{?rhel} >= 6
+%else
 #BuildRequires:  python-setuptools to avoid errors when building on CentOS 5
 Requires:		python >= 2.5
 %endif
