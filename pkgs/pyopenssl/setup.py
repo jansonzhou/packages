@@ -2,7 +2,7 @@ import setuptools
 
 version = '0.13'
 setuptools.setup(
-    name='pyopenssl',
+    name='pyOpenSSL',
     version=version,
     license='APL2',
     url='https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-%s.tar.gz' % version,
