@@ -10,7 +10,7 @@ Name:          python26-%{pkgname}
 Name:          python-%{pkgname}
 %endif
 
-Version:       0.2.14
+Version:       0.2.16
 Release:       1%{?dist}
 License:       GPL 3.0
 Group:         Development/Languages
