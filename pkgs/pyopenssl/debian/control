@@ -2,13 +2,14 @@ Source: python-openssl
 Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>
-Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-setuptools, libssl-dev (>= 0.9.8) openssl
 XS-Python-Version: >= 2.5
-Standards-Version: 3.8.4
+Standards-Version: 3.9.2
 
 Package: python-openssl
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+Depends: ${misc:Depends}, ${python:Depends}, ${shlib:Depends}
+Provides: ${python:Provides}
 XB-Python-Version: ${python:Versions}
 Description: Python wrapper module around the OpenSSL library 
  High-level wrapper around a subset of the OpenSSL library, includes
