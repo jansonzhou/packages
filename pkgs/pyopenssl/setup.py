@@ -9,3 +9,4 @@ setuptools.setup(
     author='Jean-Paul Calderone',
     author_email='msjogren@gmail.com'
 )
+
