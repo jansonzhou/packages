@@ -1,22 +1,15 @@
-Source: pyopenssl
+Source: pyopenss
 Section: python
 Priority: optional
-Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
-XSBC-Original-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Uploaders: Sandro Tosi <morph@debian.org>
-Build-Depends: debhelper (>= 5.0.37.2), python-all-dev (>= 2.6.5), python-all-dbg (>= 2.6.5), texlive-latex-base, texlive-latex-recommended, libssl-dev (>= 0.9.8), openssl
-Standards-Version: 3.9.2
-Homepage: http://launchpad.net/pyopenssl
-Vcs-Svn: svn://svn.debian.org/python-modules/packages/pyopenssl/trunk/
-Vcs-Browser: http://svn.debian.org/viewsvn/python-modules/packages/pyopenssl/trunk/
-XS-Python-Version: all
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-support (>= 0.5.3), python-all-dev (>= 2.6), python-setuptools
+XS-Python-Version: >= 2.6
+Standards-Version: 3.8.4
 
 Package: python-openssl
-Architecture: any
-Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
-Provides: ${python:Provides}
-Suggests: python-openssl-doc, python-openssl-dbg
-XB-Python-Version: ${python:Versions}
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, ${python:Depends}
+XB-Python-Version: >= 2.7, < 3.0
 Description: Python wrapper around the OpenSSL library
  High-level wrapper around a subset of the OpenSSL library, includes
  .
@@ -28,23 +21,4 @@ Description: Python wrapper around the OpenSSL library
  .
  A lot of the object methods do nothing more than calling a
  corresponding function in the OpenSSL library.
-
-Package: python-openssl-dbg
-Priority: extra
-Section: debug
-Architecture: any
-Depends: ${misc:Depends}, python-openssl (= ${binary:Version}), python-dbg, ${shlibs:Depends}
-Description: Python wrapper around the OpenSSL library (debug extension)
- High-level wrapper around a subset of the OpenSSL library, includes
- .
-   * SSL.Connection objects, wrapping the methods of Python's portable
-     sockets
-   * Callbacks written in Python
-   * Extensive error-handling mechanism, mirroring OpenSSL's error
-     codes
- .
- A lot of the object methods do nothing more than calling a
- corresponding function in the OpenSSL library.
- .
- This package contains the debug extension for python-openssl.
 
