@@ -3,9 +3,9 @@ set -e
 # Automatically added by dh_pysupport
 if which update-python-modules >/dev/null 2>&1; then
     if test -f /usr/share/python-support/python-openssl.public; then
-        sed -i 's/^pyversions=.\+/pyversions=-/' /usr/share/python-support/python-openssl.public
-        sed -i 's/python2.6/python2.7/' /usr/share/python-support/python-openssl.public
         if [ -f /usr/lib/pyshared/python2.7 ]; then
+            sed -i 's/^pyversions=.\+/pyversions=-/' /usr/share/python-support/python-openssl.public
+            sed -i 's/python2.6/python2.7/' /usr/share/python-support/python-openssl.public
             ln -s /usr/lib/pyshared/python2.6/OpenSSL /usr/lib/pyshared/python2.7/OpenSSL
         fi
         update-python-modules --post-install /usr/share/python-support/python-openssl.public
