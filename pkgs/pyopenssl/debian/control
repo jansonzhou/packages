@@ -8,7 +8,7 @@ Standards-Version: 3.9.2
 
 Package: python-openssl
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, ${shlib:Depends}
+Depends: ${misc:Depends}, python >=2.7, ${shlib:Depends}
 Provides: ${python:Provides}
 XB-Python-Version: >= 2.7, < 3.0
 Description: Python wrapper module around the OpenSSL library 
