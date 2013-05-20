@@ -1,11 +1,11 @@
 #!/bin/sh
 set -e
 # Automatically added by dh_pysupport
-# if which update-python-modules >/dev/null 2>&1; then
-# if test -f /usr/share/python-support/python-openssl.public; then
-# update-python-modules --post-install /usr/share/python-support/python-openssl.public
-# else
-# update-python-modules python-openssl.public
-# fi
-# fi
-# # End automatically added section
+if which update-python-modules >/dev/null 2>&1; then
+if test -f /usr/share/python-support/python-openssl.public; then
+update-python-modules --post-install /usr/share/python-support/python-openssl.public
+else
+update-python-modules python-openssl.public
+fi
+fi
+# End automatically added section
