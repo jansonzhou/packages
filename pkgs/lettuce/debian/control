@@ -2,8 +2,8 @@ Source: python-lettuce
 Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>
-Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
-XS-Python-Version: >= 2.5
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-support (>= 0.5.3), python-all-dev (>= 2.6), python-setuptools
+XS-Python-Version: >= 2.6
 Standards-Version: 3.8.4
 
 Package: python-lettuce
@@ -13,7 +13,7 @@ Depends: ${misc:Depends}, ${python:Depends},
   python-fuzzywuzzy,
   python-ipdb,
   ipython
-XB-Python-Version: ${python:Versions}
+XB-Python-Version: >= 2.7, < 3.0
 Description: Behaviour Driven Development for python
  Behaviour Driven Development for python
 
