@@ -55,4 +55,3 @@ High-level wrapper around a subset of the OpenSSL library, includes
 
 %changelog
 
-
