@@ -5,18 +5,18 @@
 %define pkgname pyOpenSSL
 %define srcname pyOpenSSL
 
-Summary:       Python wrapper module around the OpenSSL library
+Summary:        Python wrapper module around the OpenSSL library
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Name:          %{pkgname}
+Name:           %{pkgname}
 %else
-Name:          %{pkgname}
+Name:           %{pkgname}
 %endif
 
-Version:       0.13
-Release:       1%{?dist}
-License:       APL2
-Group:         Development/Languages
-Source0:       https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-%{version}.tar.gz
+Version:        0.13
+Release:        1%{?dist}
+License:        APL2
+Group:          Development/Languages
+Source0:        https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26
@@ -55,5 +55,4 @@ High-level wrapper around a subset of the OpenSSL library, includes
 %{python_sitearch}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
-
 
