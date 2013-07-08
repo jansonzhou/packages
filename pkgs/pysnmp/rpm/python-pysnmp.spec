@@ -18,11 +18,11 @@ Source0:        https://pypi.python.org/packages/source/p/pysnmp/pysnmp-%{versio
 BuildRoot: 		%{_tmppath}/%{name}-buildroot
 BuildArch:      noarch
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires:	python26-devel python26-setuptools
+BuildRequires:	python26-setuptools
 Requires:		python26 python26-pyasn1 >= 0.0.8
 %endif
 %if 0%{?fedora} >= 8
-BuildRequires:  python-devel >= 2.6 python-setuptools
+BuildRequires:  python-setuptools
 Requires:		python >= 2.6 python-pyasn1 >= 0.1.17
 %endif
 
