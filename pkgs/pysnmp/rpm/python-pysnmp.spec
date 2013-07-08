@@ -17,10 +17,14 @@ URL:            http://pysnmp.sourceforge.net/
 Source0:        https://pypi.python.org/packages/source/p/pysnmp/pysnmp-%{version}.tar.gz
 BuildRoot: 		%{_tmppath}/%{name}-buildroot
 BuildArch:      noarch
+
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-BuildRequires:	python26-setuptools
-Requires:		python26 python26-pyasn1 >= 0.0.8
+Requires:       python26 
+%else
+BuildRequires: 	python-setuptools
+Requires:       python >= 2.6
 %endif
+
 %if 0%{?fedora} >= 8
 BuildRequires:  python-setuptools
 Requires:		python >= 2.6 python-pyasn1 >= 0.1.17
