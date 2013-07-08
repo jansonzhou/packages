@@ -14,7 +14,7 @@ Release:        1%{?dist}
 Group:          Development/Libraries
 License:        BSD
 URL:            http://pysnmp.sourceforge.net/
-Source0:        https://pypi.python.org/packages/source/p/pysnmp/pysnmp-%s.tar.gz' %{version}
+Source0:        https://pypi.python.org/packages/source/p/pysnmp/pysnmp-%{version}.tar.gz
 BuildRoot: 		%{_tmppath}/%{name}-buildroot
 BuildArch:      noarch
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
