@@ -12,6 +12,6 @@ Architecture: all
 Depends: ${misc:Depends}, python (>=2.6)
 XB-Python-Version: >= 2.6
 Description: ASN.1 types and codecs
-This project is dedicated to implementation of ASN.1 types (concrete syntax)
-and codecs (transfer syntaxes) for Python programming environment. ASN.1
-compiler is planned for implementation in the future.
+ This project is dedicated to implementation of ASN.1 types (concrete syntax)
+ and codecs (transfer syntaxes) for Python programming environment. ASN.1
+ compiler is planned for implementation in the future.
