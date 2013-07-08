@@ -1,0 +1,65 @@
+Source: python-pysnmp4
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+XSBC-Original-Maintainer: Arnaud Fontaine <arnau@debian.org>
+Uploaders: Jan Luebbe <jluebbe@debian.org>, Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Standards-Version: 3.7.2
+Build-Depends: debhelper (>= 7), cdbs (>= 0.4.42), python-all-dev (>= 2.6), python-support (>= 1.0)
+XS-Vcs-Svn: svn://svn.debian.org/python-modules/packages/python-pysnmp4/trunk/
+
+Package: python-pysnmp4
+Architecture: all
+Depends: ${python:Depends}, libsmi2 | libsmi2ldbl, libsmi2-common, python-pyasn1, python-pysnmp-common
+Recommends: python-crypto, python-pysnmp4-mibs, python-pysnmp4-apps
+Suggests: python-pysnmp4-doc
+XB-Python-Version: ${python:Versions}
+Description: Python SNMP library for agents and managers (unstable branch)
+ This is a Python implementation  of SNMP v.1/v.2c engine. Its general
+ functionality  is  to  assemble/disassemble SNMP  messages  from/into
+ given  SNMP Object  IDs  along with  associated  values. PySNMP  also
+ provides a few transport methods specific to TCP/IP networking.
+ .
+ PySNMP is written entirely in  Python and is self-sufficient in terms
+ that it does not rely on any third party tool (it isn't a wrapper).
+ .
+ PySNMP 4.x is the unstable branch.
+ .
+  Homepage: http://pysnmp.sourceforge.net/
+
+Package: python-pysnmp4-doc
+Section: doc
+Architecture: all
+Description: Python SNMP library for agents and managers (unstable branch)
+ This is a Python implementation  of SNMP v.1/v.2c engine. Its general
+ functionality  is  to  assemble/disassemble SNMP  messages  from/into
+ given  SNMP Object  IDs  along with  associated  values. PySNMP  also
+ provides a few transport methods specific to TCP/IP networking.
+ .
+ PySNMP is written entirely in  Python and is self-sufficient in terms
+ that it does not rely on any third party tool (it isn't a wrapper).
+ .
+ PySNMP 4.x is the unstable branch.
+ .
+ This package contains the documentation for PySNMP.
+ .
+  Homepage: http://pysnmp.sourceforge.net/
+
+Package: python-pysnmp-common
+Architecture: all
+Depends: ${python:Depends}
+Recommends: python-pysnmp4
+XB-Python-Version: ${python:Versions}
+Description: Python SNMP library for agents and managers (version selection module)
+ This is a Python implementation  of SNMP v.1/v.2c engine. Its general
+ functionality  is  to  assemble/disassemble SNMP  messages  from/into
+ given  SNMP Object  IDs  along with  associated  values. PySNMP  also
+ provides a few transport methods specific to TCP/IP networking.
+ .
+ PySNMP is written entirely in  Python and is self-sufficient in terms
+ that it does not rely on any third party tool (it isn't a wrapper).
+ .
+ This package contains a python module that allows users of PySNMP to
+ select the API version.
+ .
+  Homepage: http://pysnmp.sourceforge.net/

@@ -1,0 +1,20 @@
+---- Documentation ----
+The documentation and examples for this package is in
+python-pysnmp4-doc.
+
+When you install that package, you can find the documentation and
+examples in /usr/share/doc/python-pysnmp4-doc.
+
+---- API Versions ----
+If more than one pysnmp version is installed, it is possible to choose
+a version by setting the PYSNMP_API_VERSION environment variable.
+
+You need to set the environment variable before importing pysnmp.
+If you need pysnmp2, use this code:
+
+ import os 
+ os.environ['PYSNMP_API_VERSION'] = 'v2'
+ import pysnmp
+
+If you need another version, replace v2 with the correct one.
+

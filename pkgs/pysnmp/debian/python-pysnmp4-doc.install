@@ -1,0 +1,3 @@
+docs/*.{html,gif}	usr/share/doc/python-pysnmp4-doc/
+docs/mibs/*.txt		usr/share/doc/python-pysnmp4-doc/
+

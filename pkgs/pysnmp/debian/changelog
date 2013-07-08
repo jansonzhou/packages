@@ -1,0 +1,47 @@
+python-pysnmp4 (4.1.12a-4) scalr; urgency=low
+
+  * New upstream release
+  * Update maintainer address
+
+ -- Marat Komarov <marat@scalr.net>  Mon, 20 Dec 2010 13:48:44 +0200
+
+
+python-pysnmp4 (4.1.8a-1) unstable; urgency=low
+
+  * New upstream release
+  * Update my maintainer address
+
+ -- Jan Luebbe <jluebbe@debian.org>  Sun, 26 Aug 2007 13:48:44 +0200
+
+python-pysnmp4 (4.1.7a-1) unstable; urgency=low
+
+  [ Arnaud Fontaine ]
+  * New upstream release.
+    + Now choose the last version of pysnmp when multiple versions are
+      installed. Closes: #415032.
+
+  [ Piotr Ozarowski ]
+  * Added XS-Vcs-Svn field
+
+ -- Arnaud Fontaine <arnaud@andesi.org>  Tue, 17 Apr 2007 00:14:22 +0200
+
+python-pysnmp4 (4.1.6a-2) unstable; urgency=low
+
+   * New Python policy changes.
+    + debian/rules:
+      - Add DEB_PYTHON_SYSTEM=pysupport.
+      - Clean debian/rules.
+    + debian/control.in
+      - Clean Build-Depends and Depends, cdbs handles that 
+        automatically now.
+      - XB-Python-Version and Provides for binary package.
+    + debian/postinst && debian/prerm:
+      - Remove "hand made" python-support stuff, cdbs does this.
+
+ -- Arnaud Fontaine <arnaud@andesi.org>  Tue, 20 Jun 2006 12:20:29 +0200
+
+python-pysnmp4 (4.1.6a-1) unstable; urgency=low
+
+  * Initial release. Closes: #263417.
+
+ -- Jan Luebbe <jluebbe@lasnet.de>  Thu,  1 Jun 2006 16:39:10 +0200

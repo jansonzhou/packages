@@ -1,0 +1,18 @@
+.TH "libsmi2pysnmp" "1" "0.0.5-alpha" "Jan Luebbe" "PYSNMP"
+.SH "NAME"
+.LP
+libsmi2pysnmp \- libsmi-to-pysnmp MIB converter
+.SH "SYNTAX"
+.LP
+libsmi2pysnmp
+.SH "DESCRIPTION"
+.LP
+libsmi2pysnmp is used to convert MIB definitions to a form usable by PySNMP. To convert a single MIB use it like this:
+smidump -f python <mib-text-file.txt> | libsmi2pysnmp > <mib-text-file.py>
+.SH "AUTHORS"
+.LP
+Ilya Etingof <ilya@glas.net>
+.SH "SEE ALSO"
+.LP
+http://pysnmp.sourceforge.net
+
