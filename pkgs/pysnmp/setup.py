@@ -9,3 +9,4 @@ setuptools.setup(
     author='Ilya Etingof',
     author_email='ilya@glas.net'
 )
+
