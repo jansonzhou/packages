@@ -1,0 +1,18 @@
+Source: pymongo
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, python-setuptools (>= 0.6.10), python (>= 2.5), debhelper (>= 7), python-dev (>= 2.5), python-support (>= 1.0.0)
+Standards-Version: 2.6
+
+Package: python-pymongo
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+XB-Python-Version: ${python:Versions}
+Provides: ${python:Provides}
+Description: Python interface to the MongoDB document-oriented database
+ MongoDB is a high-performance, open source, schema-free
+ document-oriented data store. Pymongo provides an interface
+ to easily access it from Python.
+
+
