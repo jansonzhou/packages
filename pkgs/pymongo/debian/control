@@ -8,7 +8,7 @@ Standards-Version: 2.6
 Package: python-pymongo
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}
-XB-Python-Version: ${python:Versions}
+XB-Python-Version: >= 2.6, < 3.0
 Provides: ${python:Provides}
 Description: Python interface to the MongoDB document-oriented database
  MongoDB is a high-performance, open source, schema-free
