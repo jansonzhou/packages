@@ -1,6 +1,5 @@
 import setuptools
 
-
 version = '2.6'
 setuptools.setup(
     name='pymongo',
