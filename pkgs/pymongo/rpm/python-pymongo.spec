@@ -29,9 +29,9 @@
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 %global pymongo python26-pymongo
 %global python_bson python26-bson
-%global python2_devel python26-devel
-%global python_nose python26-nose
-%global python_setuptools python26-setuptools
+%global python2_devel python-devel
+%global python_nose python-nose
+%global python_setuptools python-setuptools
 %else
 %global pymongo pymongo
 %global python_bson python-bson
