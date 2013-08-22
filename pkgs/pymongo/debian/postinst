@@ -2,9 +2,10 @@
 
 # Automatically added by dh_pysupport
 if which update-python-modules >/dev/null 2>&1; then
-	if test -f /usr/share/python-support/pymongo.public; then
-		update-python-modules -v --post-install /usr/share/python-support/pymongo.public
+	package_dirs=/usr/share/python-support/python-pymongo.public
+	if test -f $package_dirs; then
+		update-python-modules -v --post-install $package_dirs
 	else
-		update-python-modules pymongo
+		update-python-modules python-pymongo
 	fi
 fi
