@@ -1,3 +1,9 @@
+from buildbot.schedulers.basic import AnyBranchScheduler
+from buildbot.schedulers.triggerable import Triggerable
+from buildbot.changes.filter import ChangeFilter
+from buildbot.process.factory import BuildFactory
+
+
 project = __opts__['project']
 
 
