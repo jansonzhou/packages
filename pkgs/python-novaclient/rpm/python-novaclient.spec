@@ -19,7 +19,6 @@ Source0:       http://pypi.python.org/packages/source/p/python-novaclient/python
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 python26-httplib2 python26-argparse python26-prettytable python26-iso8601
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5 python-httplib2 python-argparse python-prettytable python-iso8601
 %endif
 BuildArch:     noarch

@@ -19,7 +19,6 @@ Source0:       http://pypi.python.org/packages/source/r/requests/requests-%{vers
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5
 %endif
 BuildArch:     noarch

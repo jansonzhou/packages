@@ -19,7 +19,6 @@ Source0:       https://pypi.python.org/packages/source/i/ipython/ipython-%{versi
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5
 %endif
 BuildArch:     noarch

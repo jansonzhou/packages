@@ -26,7 +26,6 @@ Requires:       python26-novaclient-rax-backup-schedule-ext
 Requires:       python26-novaclient-os-networksv2-ext
 Requires:       python26-novaclient-rax-default-network-flags-ext
 %else
-BuildRequires: 	python-setuptools
 Requires:       python-setuptools 
 Requires:       python-cinderclient 
 Requires:       python-novaclient

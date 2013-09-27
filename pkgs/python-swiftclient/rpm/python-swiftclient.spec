@@ -20,7 +20,6 @@ Source0:       http://pypi.python.org/packages/source/p/python-swiftclient/pytho
 Requires:       python26 
 Requires:       python26-setuptools
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5
 Requires:       python-setuptools
 %endif

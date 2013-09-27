@@ -19,7 +19,6 @@ Source0:       http://pypi.python.org/packages/source/l/lettuce/lettuce-%{versio
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 ipython >= 0.1 python26-sure python26-fuzzywuzzy python26-ipdb
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5 ipython >= 0.1 python-sure python-fuzzywuzzy python-ipdb
 %endif
 BuildArch:     noarch

@@ -19,10 +19,8 @@ BuildRoot:      %{_tmppath}/python-%{pkgname}-%{version}-%{release}-root-%(%{__i
 
 BuildArch:      noarch
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-#BuildRequires:	python26-setuptools
 Requires:		python26
 %else
-#BuildRequires:  python-setuptools to avoid errors when building on CentOS 5
 Requires:		python >= 2.5
 %endif
 

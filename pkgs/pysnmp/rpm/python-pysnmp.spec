@@ -21,12 +21,10 @@ BuildArch:      noarch
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.6
 %endif
 
 %if 0%{?fedora} >= 8
-BuildRequires:  python-setuptools
 Requires:		python >= 2.6 python-pyasn1 >= 0.1.17
 %endif
 

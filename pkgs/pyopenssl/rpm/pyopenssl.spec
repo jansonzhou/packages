@@ -21,7 +21,6 @@ Source0:        https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-%{
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26
 %else
-BuildRequires:  python-setuptools
 Requires:       python >= 2.5
 %endif
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)

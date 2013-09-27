@@ -18,11 +18,9 @@ Source0:       https://pypi.python.org/packages/source/p/python-keystoneclient/p
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26
-Requires:       python26-setuptools
 Requires:       python26-requests < 1.0
 Requires:       python26-iso8601
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5
 Requires:       python-setuptools
 Requires:       python-requests < 1.0

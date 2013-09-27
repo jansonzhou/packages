@@ -21,7 +21,6 @@ Source0:        https://pypi.python.org/packages/source/p/pyasn1/pyasn1-%{versio
 Requires:		python26
 %endif
 %if 0%{?fedora} >= 8
-BuildRequires:  python-setuptools
 Requires:		python
 %endif
 

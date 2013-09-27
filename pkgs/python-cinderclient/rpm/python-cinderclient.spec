@@ -20,7 +20,6 @@ Source0:       http://pypi.python.org/packages/source/p/python-cinderclient/pyth
 Requires:       python26 python26-httplib2 python26-argparse python26-prettytable 
 #Requires:      python26-requests
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5 python-httplib2 python-argparse python-prettytable
 #Requires:      python-requests
 %endif
