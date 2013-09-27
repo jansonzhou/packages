@@ -1,9 +1,23 @@
 #!/usr/bin/make -f
+export DH_VERBOSE=1
 
-DEB_PYTHON_SYSTEM=pysupport
+%:
+	dh $@ --with python2
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/python-distutils.mk
+override_dh_auto_build:
+	dh_auto_build
+	sphinx-build -b html doc debian/html
+	rm -rf debian/html/_sources/
+	rm -f debian/python-pymongo-doc/usr/share/doc/python-pymongo-doc/html/_static/jquery.js
+	rm -rf debian/python-pymongo-doc/usr/share/doc/python-pymongo-doc/html/.doctrees
 
+override_dh_installchangelogs:
+	dh_installchangelogs doc/changelog.rst
 
-# Add here any variable or target overrides you need.
+override_dh_auto_clean:
+	rm -rf debian/html
+	find doc -name "*.pyc" -exec rm -rf {} +
+	dh_auto_clean
+
+override_dh_compress:
+	dh_compress -X.html
