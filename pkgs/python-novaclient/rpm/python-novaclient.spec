@@ -51,7 +51,6 @@ Each implements 100% of the OpenStack Nova API.
 %files
 %defattr(-, root, root, -)
 /usr/bin/*
-/usr/novaclient/*
 %{python_sitelib}/%{pkgname}/*
 %{python_sitelib}/python_%{pkgname}-%{version}-py%{pyver}.egg-info
 
