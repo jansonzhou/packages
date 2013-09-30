@@ -1,39 +1,36 @@
-pymongo (2.6-1) unstable; urgency=low
+pymongo (2.2-4ubuntu0.1) raring-security; urgency=low
 
-  * Imported Upstream version 2.6 (Closes: #709487)
-  * Michael G Schwern copyright on time64.c added (Closes: #720612).
-  * Improved *-ext dependencies (Closes: #715395)
+  * SECURITY UPDATE: denial of service via invalid DBRef
+    - debian/patches/CVE-2013-2132.patch: fix null pointer when decoding
+      invalid DBRef in bson/__init__.py, bson/_cbsonmodule.c, added test to
+      test/test_collection.py.
+    - CVE-2013-2132
 
- -- Federico Ceratto <federico.ceratto@gmail.com>  Tue, 27 Aug 2013 22:01:21 +0100
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 21 Jun 2013 11:25:59 -0400
 
-pymongo (2.5.2-1.1) unstable; urgency=low
+pymongo (2.2-4) unstable; urgency=low
+
+  * debian/copynight:
+    - Copyright updates on bson/time64* files (Closes: #689283)
+      thanks to Luca Falavigna <dktrkranz@debian.org>
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Sun, 21 Oct 2012 18:30:15 +0100
+
+pymongo (2.2-3.1) unstable; urgency=low
 
   * Non-maintainer upload.
-  * Split out python3 extensions python-pymongo-ext and python3-bson-ext so 
-    that they can have proper dependencies (Closes: #712112)
+  * Refactor debian/copyright and link to common-licenses for apache license.
+  * Add unicode limitation to copyright statement for
+    bson/encoding_helpers.c (Closes: #689283)
 
- -- Scott Kitterman <scott@kitterman.com>  Mon, 19 Aug 2013 18:55:56 -0400
+ -- Bas Wijnen <wijnen@debian.org>  Sat, 13 Oct 2012 14:09:15 +0200
 
-pymongo (2.5.2-1) unstable; urgency=high
+pymongo (2.2-3) unstable; urgency=low
 
-  * New upstream release. (Closes: #710597)
-  * Releasing to unstable.
+  * python-pymongo-ext now depends on python-bson-ext (Closes: #688040)
+  * Copyright updated (Closes: #689283)
 
- -- Federico Ceratto <federico.ceratto@gmail.com>  Sun, 02 Jun 2013 11:11:10 +0100
-
-pymongo (2.5-1) experimental; urgency=low
-
-  * New upstream release.
-  * Dependency versions updated (Closes: #705560)
-
- -- Federico Ceratto <federico.ceratto@gmail.com>  Wed, 01 May 2013 22:55:11 +0100
-
-pymongo (2.4.2-1) unstable; urgency=low
-
-  * New upstream release. (Closes: #703447)
-  * Python3 support added. (Closes: #680376, #680379)
-
- -- Federico Ceratto <federico.ceratto@gmail.com>  Wed, 20 Mar 2013 00:38:10 +0000
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Sat, 06 Oct 2012 17:16:25 +0100
 
 pymongo (2.2-2) unstable; urgency=low
 

@@ -1,12 +1,15 @@
-Source: python-pymongo-test
+Source: pymongo-test
 Section: python
 Priority: optional
-Maintainer: Federico Ceratto <federico.ceratto@gmail.com>
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+XSBC-Original-Maintainer: Federico Ceratto <federico.ceratto@gmail.com>
 Uploaders: Janos Guljas <janos@resenje.org>
+DM-Upload-Allowed: yes
 Build-Depends: debhelper (>= 9~),
  python-all-dev (>= 2.6.6-3~),
  python-setuptools (>= 0.6.14),
-Standards-Version: 3.9.4
+ python-sphinx
+Standards-Version: 3.9.3
 X-Python-Version: >= 2.5
 Homepage: http://api.mongodb.org/python/
 Vcs-Git: git://git.debian.org/git/collab-maint/pymongo.git
@@ -26,11 +29,11 @@ Description: Python interface to the MongoDB document-oriented database
 
 Package: python-pymongo-ext
 Architecture: any-i386 any-ia64 any-amd64
-Depends: ${misc:Depends}
+Depends: python-bson (= ${binary:Version}), ${shlibs:Depends}
  , ${python:Depends}
- , ${shlibs:Depends}
- , python-bson (= ${binary:Version})
- , python-pymongo (= ${binary:Version})
+ , ${misc:Depends}
+ , python-pymongo-test
+ , python-bson-ext
 Recommends: python-gridfs (>= ${source:Version})
 Provides: ${python:Provides}
 Description: C-coded extension to the python-pymongo package
@@ -52,7 +55,7 @@ Package: python-gridfs
 Architecture: all
 Depends: ${python:Depends}
  , ${misc:Depends}
- , python-pymongo
+ , python-pymongo-test
 Provides: ${python:Provides}
 Description: Python implementation of GridFS for MongoDB
  GridFS is a storage specification for large objects in MongoDB.
@@ -70,10 +73,7 @@ Description: Python implementation of BSON for MongoDB
 
 Package: python-bson-ext
 Architecture: any-i386 any-ia64 any-amd64
-Depends: ${python:Depends}
- , ${misc:Depends}
- , ${shlibs:Depends}
- , python-bson (= ${binary:Version})
+Depends: ${python:Depends}, ${misc:Depends}, ${shlibs:Depends}, python-bson
 Provides: ${python:Provides}
 Description: C-coded extension to the python-bson package
  BSON Python module contains all of the Binary JSON encoding and decoding
