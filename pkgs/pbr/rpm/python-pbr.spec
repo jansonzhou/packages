@@ -29,7 +29,7 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 PBR is a library that injects some useful and sensible default behaviors into your setuptools run
 
 %prep
-%setup -q -n python-%{pkgname}-%{version}
+%setup -q -n %{pkgname}-%{version}
 %{__rm} -rf tests
 
 %build
@@ -50,6 +50,6 @@ PBR is a library that injects some useful and sensible default behaviors into yo
 %defattr(-, root, root, -)
 /usr/bin/*
 %{python_sitelib}/%{pkgname}/*
-%{python_sitelib}/python_%{pkgname}-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/%{pkgname}-%{version}-py%{pyver}.egg-info
 
 %changelog
