@@ -17,11 +17,9 @@ URL:           https://github.com/rackspace/python-cinderclient/
 Source0:       http://pypi.python.org/packages/source/p/python-cinderclient/python-cinderclient-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Requires:       python26 python26-httplib2 python26-argparse python26-prettytable python26-pbr python26-six
-#Requires:      python26-requests
+Requires:       python26 python26-httplib2 python26-argparse python26-prettytable python26-pbr python26-six python26-requests
 %else
-Requires:       python >= 2.5 python-httplib2 python-argparse python-prettytable python-pbr python-six
-#Requires:      python-requests
+Requires:       python >= 2.5 python-httplib2 python-argparse python-prettytable python-pbr python-six python-requests
 %endif
 BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)

@@ -8,7 +8,7 @@ Standards-Version: 3.8.4
 
 Package: python-cinderclient
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-prettytable, python-argparse, python-httplib2
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-prettytable, python-argparse, python-httplib2, python-requests, python-six, python-pbr
 XB-Python-Version: ${python:Versions}
 Description: This is a client for the OpenStack Volume API. 
  There's a Python API (the cinderclient module), and a command-line script (cinder). 
