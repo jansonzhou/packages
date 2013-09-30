@@ -1,5 +1,6 @@
 import setuptools
 
+
 version = '0.1.1'
 setuptools.setup(
     name='os_diskconfig_python_novaclient_ext',
