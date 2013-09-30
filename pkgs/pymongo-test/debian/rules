@@ -22,7 +22,6 @@ override_dh_auto_clean:
 	rm -rf debian/html
 	find doc -name "*.pyc" -exec rm -rf {} +
 	dh_auto_clean
-	done
 
 override_dh_compress:
 	dh_compress -X.html
