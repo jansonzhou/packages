@@ -6,5 +6,6 @@ setuptools.setup(
     version=version,
     url='https://pypi.python.org/packages/source/p/pymongo/pymongo-%s.tar.gz' % version,
     author='Mike Dirolf',
+    platforms="ubuntu1204",
     author_email='mongodb-user@googlegroups.com',
 )
