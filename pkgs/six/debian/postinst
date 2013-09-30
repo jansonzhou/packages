@@ -2,9 +2,9 @@
 
 # Automatically added by dh_pysupport
 if which update-python-modules >/dev/null 2>&1; then
-	if test -f /usr/share/python-support/python-pbr.public; then
-		update-python-modules -v --post-install /usr/share/python-support/python-pbr.public
+	if test -f /usr/share/python-support/python-six.public; then
+		update-python-modules -v --post-install /usr/share/python-support/python-six.public
 	else
-		update-python-modules pbr
+		update-python-modules six
 	fi
 fi
