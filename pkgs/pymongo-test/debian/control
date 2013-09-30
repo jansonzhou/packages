@@ -1,4 +1,4 @@
-Source: pymongo
+Source: pymongo-test
 Section: python
 Priority: optional
 Maintainer: Federico Ceratto <federico.ceratto@gmail.com>
@@ -16,7 +16,7 @@ Homepage: http://api.mongodb.org/python/
 Vcs-Git: git://git.debian.org/git/collab-maint/pymongo.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/pymongo.git
 
-Package: python-pymongo
+Package: python-pymongo-test
 Architecture: any
 Depends: python-bson (= ${binary:Version}), ${python:Depends}, ${misc:Depends}
 Recommends: python-gridfs (>= ${source:Version})
@@ -28,7 +28,7 @@ Description: Python interface to the MongoDB document-oriented database
  to easily access it from Python.
  Consider installing the python-pymongo-ext C extension to improve performance.
 
-Package: python3-pymongo
+Package: python3-pymongo-test
 Architecture: any
 Depends: python3-bson (= ${binary:Version}), ${python3:Depends}, ${misc:Depends}
 Recommends: python3-gridfs (>= ${source:Version})
