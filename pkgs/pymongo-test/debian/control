@@ -1,4 +1,4 @@
-Source: pymongo-test
+Source: python-pymongo-test
 Section: python
 Priority: optional
 Maintainer: Federico Ceratto <federico.ceratto@gmail.com>
