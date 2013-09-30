@@ -48,7 +48,6 @@ PBR is a library that injects some useful and sensible default behaviors into yo
 
 %files
 %defattr(-, root, root, -)
-/usr/bin/*
 %{python_sitelib}/%{pkgname}/*
 %{python_sitelib}/%{pkgname}-%{version}-py%{pyver}.egg-info
 
