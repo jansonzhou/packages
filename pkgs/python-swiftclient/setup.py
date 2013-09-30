@@ -1,5 +1,6 @@
 import setuptools
 
+
 version = '1.6.0'
 setuptools.setup(
     name='python-swiftclient',
