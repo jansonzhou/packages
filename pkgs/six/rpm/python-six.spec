@@ -63,7 +63,7 @@ list: http://mail.python.org/mailman/listinfo/python-porting
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{pkgname}.py
+%{python_sitelib}/%{pkgname}.*
 %{python_sitelib}/%{pkgname}-%{version}-py%{pyver}.egg-info
 
 %changelog
