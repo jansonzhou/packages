@@ -1,6 +1,5 @@
 import setuptools
 
-
 version = '2.15.0'
 setuptools.setup(
     name='python-novaclient',
