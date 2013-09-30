@@ -19,7 +19,6 @@ Source0:       http://pypi.python.org/packages/source/o/os_networksv2_python_nov
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
 %else
-BuildRequires: 	python-setuptools
 Requires:       python >= 2.5
 %endif
 BuildArch:     noarch
