@@ -32,7 +32,7 @@ Architecture: any-i386 any-ia64 any-amd64
 Depends: python-bson (= ${binary:Version}), ${shlibs:Depends}
  , ${python:Depends}
  , ${misc:Depends}
- , python-pymongo-test
+ , python-pymongo
  , python-bson-ext
 Recommends: python-gridfs (>= ${source:Version})
 Provides: ${python:Provides}
@@ -55,7 +55,7 @@ Package: python-gridfs
 Architecture: all
 Depends: ${python:Depends}
  , ${misc:Depends}
- , python-pymongo-test
+ , python-pymongo
 Provides: ${python:Provides}
 Description: Python implementation of GridFS for MongoDB
  GridFS is a storage specification for large objects in MongoDB.
