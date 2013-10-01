@@ -79,3 +79,4 @@ Description: C-coded extension to the python-bson package
  BSON Python module contains all of the Binary JSON encoding and decoding
  logic for MongoDB.
  This package contains an extension written in C for higher performance.
+
