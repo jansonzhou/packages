@@ -1,2 +1,2 @@
-usr/lib/python*/*-packages/pymongo*/*.py
-usr/lib/python*/*-packages/pymongo*/*.txt
+usr/lib/python*/*-packages/pymongo-test*/*.py
+usr/lib/python*/*-packages/pymongo-test*/*.txt
