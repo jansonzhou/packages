@@ -55,9 +55,6 @@ Requires:       %{python_bson} = %{version}-%{release}
 
 
 BuildRequires:  %{python2_devel}
-BuildRequires:  %{python_nose}
-BuildRequires:  %{python_setuptools}
-
 
 %if 0%{?with_python3}
 BuildRequires:  python3-devel
