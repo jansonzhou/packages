@@ -33,7 +33,7 @@
 %global python_nose python-nose
 %global python_setuptools python-setuptools
 %else
-%global pymongo pymongo
+%global pymongo python-pymongo
 %global python_bson python-bson
 %global python2_devel python2-devel
 %global python_nose python-nose
