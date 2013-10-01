@@ -1,4 +1,4 @@
-Source: python-pymongo-test
+Source: pymongo
 Section: python
 Priority: optional
 Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
