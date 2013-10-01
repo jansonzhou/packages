@@ -1,4 +1,4 @@
-pymongo (2.1-1ubuntu0.1) precise-security; urgency=low
+pymongo (2.2-4ubuntu0.1) raring-security; urgency=low
 
   * SECURITY UPDATE: denial of service via invalid DBRef
     - debian/patches/CVE-2013-2132.patch: fix null pointer when decoding
@@ -6,7 +6,64 @@ pymongo (2.1-1ubuntu0.1) precise-security; urgency=low
       test/test_collection.py.
     - CVE-2013-2132
 
- -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 21 Jun 2013 11:31:00 -0400
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Fri, 21 Jun 2013 11:25:59 -0400
+
+pymongo (2.2-4) unstable; urgency=low
+
+  * debian/copynight:
+    - Copyright updates on bson/time64* files (Closes: #689283)
+      thanks to Luca Falavigna <dktrkranz@debian.org>
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Sun, 21 Oct 2012 18:30:15 +0100
+
+pymongo (2.2-3.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Refactor debian/copyright and link to common-licenses for apache license.
+  * Add unicode limitation to copyright statement for
+    bson/encoding_helpers.c (Closes: #689283)
+
+ -- Bas Wijnen <wijnen@debian.org>  Sat, 13 Oct 2012 14:09:15 +0200
+
+pymongo (2.2-3) unstable; urgency=low
+
+  * python-pymongo-ext now depends on python-bson-ext (Closes: #688040)
+  * Copyright updated (Closes: #689283)
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Sat, 06 Oct 2012 17:16:25 +0100
+
+pymongo (2.2-2) unstable; urgency=low
+
+  * Dependency added (Closes: #678471)
+  * debhelper dependency version bumped to >= 9~
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Tue, 26 Jun 2012 23:34:24 +0100
+
+pymongo (2.2-1) unstable; urgency=low
+
+  * New upstream release.
+  * Dependencies added (Closes: #670268)
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Thu, 10 May 2012 21:21:40 +0100
+
+pymongo (2.1.1-3) unstable; urgency=low
+
+  * C extensions moved to python-pymongo-ext and python-bson-ext
+    packages (Closes: #657150)
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Sat, 25 Feb 2012 17:10:28 +0000
+
+pymongo (2.1.1-2) experimental; urgency=low
+
+  * C extensions moved to python-pymongo-ext and python-bson-ext packages
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Fri, 10 Feb 2012 21:55:36 +0000
+
+pymongo (2.1.1-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Tue, 24 Jan 2012 20:33:33 +0000
 
 pymongo (2.1-1) unstable; urgency=low
 
