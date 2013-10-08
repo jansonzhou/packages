@@ -6,7 +6,7 @@ Name:			python26-%{pkgname}
 %else
 Name:			python-%{pkgname}
 %endif
-Version:		2.7.0
+Version:		2.13.3
 Release:		1%{?dist}
 Summary:		A simple lightweight interface to Amazon Web Services
 License:		MIT
