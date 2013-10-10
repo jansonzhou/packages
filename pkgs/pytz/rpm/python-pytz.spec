@@ -1,5 +1,6 @@
 %{!?python_sitelib: %define python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %define pkgname pytz
+%define srcname pytz
 
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
