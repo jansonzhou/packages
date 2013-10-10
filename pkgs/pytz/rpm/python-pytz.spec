@@ -13,7 +13,7 @@ Summary:        World timezone definitions, modern and historical
 
 Group:          Development/Languages
 License:        MIT
-Source0:        http://pypi.python.org/packages/source/p/pytz/pytz-${version}.tar.gz
+Source0:        http://pypi.python.org/packages/source/p/pytz/pytz-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
