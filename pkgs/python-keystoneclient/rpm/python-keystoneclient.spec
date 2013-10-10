@@ -23,7 +23,8 @@ Requires:       python26-argparse
 Requires:       python26-iso8601
 Requires:       python26-pbr
 Requires:       python26-six
-Requires:       babel
+Requires:       python26-babel
+Requires:       python26-netaddr
 %else
 Requires:       python >= 2.5
 Requires:       python-setuptools
@@ -32,7 +33,8 @@ Requires:       python-requests
 Requires:       python-iso8601
 Requires:       python-pbr
 Requires:       python-six
-Requires:       babel
+Requires:       python-babel
+Requires:       python-netaddr
 %endif
 BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
