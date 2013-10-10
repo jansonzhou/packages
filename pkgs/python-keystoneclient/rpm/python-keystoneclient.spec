@@ -18,13 +18,19 @@ Source0:       https://pypi.python.org/packages/source/p/python-keystoneclient/p
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26
-Requires:       python26-requests < 1.0
+Requires:       python26-requests
+Requires:       python26-argparse
 Requires:       python26-iso8601
+Requires:       python26-pbr
+Requires:       python26-six
 %else
 Requires:       python >= 2.5
 Requires:       python-setuptools
-Requires:       python-requests < 1.0
+Requires:       python-argparse
+Requires:       python-requests
 Requires:       python-iso8601
+Requires:       python-pbr
+Requires:       python-six
 %endif
 BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
