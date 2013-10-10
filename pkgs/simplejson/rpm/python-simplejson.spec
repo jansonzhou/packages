@@ -49,7 +49,7 @@ Simple, fast, extensible JSON encoder/decoder for Python
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{pkgname}/*
-%{python_sitelib}/%{pkgname}-%{version}-py%{pyver}.egg-info
+%{python_sitearch}/%{pkgname}/*
+%{python_sitearch}/%{pkgname}-%{version}-py%{pyver}.egg-info
 
 %changelog
