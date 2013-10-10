@@ -1,6 +1,6 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
-%define pkgname simplesjon
+%define pkgname simplejson
 
 Summary:       Python Build Reasonableness 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
@@ -13,7 +13,7 @@ Version:       3.3.1
 Release:       1%{?dist}
 License:       MIT
 Group:         Development/Languages
-URL:           https://pypi.python.org/pypi/simplesjon/
+URL:           https://pypi.python.org/pypi/simplejson/
 Source0:       https://pypi.python.org/packages/source/s/simplejson/simplejson-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
