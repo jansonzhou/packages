@@ -45,6 +45,7 @@ A pure Python network address representation and manipulation library.
 
 %files
 %defattr(-, root, root, -)
+/usr/bin
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
