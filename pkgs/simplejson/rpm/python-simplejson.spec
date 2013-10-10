@@ -2,6 +2,7 @@
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 
 %define pkgname simplejson
+%define srcname simplejson
 
 Summary:       Python Build Reasonableness 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
