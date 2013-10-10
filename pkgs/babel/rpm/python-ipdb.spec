@@ -14,7 +14,7 @@ Version:       1.3
 Release:       1%{?dist}
 License:       BSD 
 Group:         Development/Languages
-Source0:       https://pypi.python.org/packages/source/b/Babel/Babel-%{version}.tar.gz
+Source0:       https://pypi.python.org/packages/source/B/Babel/Babel-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
