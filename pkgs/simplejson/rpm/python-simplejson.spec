@@ -1,6 +1,6 @@
-%{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
+
 %define pkgname simplejson
 
 Summary:       Python Build Reasonableness 
@@ -30,7 +30,7 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Simple, fast, extensible JSON encoder/decoder for Python
 
 %prep
-%setup -q -n %{pkgname}-%{version}
+%setup -q -n %{srcname}-%{version}
 %{__rm} -rf tests
 
 %build
@@ -40,16 +40,14 @@ Simple, fast, extensible JSON encoder/decoder for Python
 %{__rm} -rf %{buildroot}
 %{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
-#check
-#pushd test
-#PYTHONPATH=../ %{__python} test_%{pkgname}.py
 
 %clean
 %{__rm} -rf %{buildroot}
 
 %files
 %defattr(-, root, root, -)
-%{python_sitearch}/%{pkgname}/*
-%{python_sitearch}/%{pkgname}-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/%{srcname}/*
+%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
+
