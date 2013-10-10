@@ -58,3 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 
 * Tue Jun 1 2010 Marat Komarov <marat@scalr.net> 1.9b-1
 - Initial spec file from Fedora. Thanks to Robert Scheck <robert@fedoraproject.org>
+
