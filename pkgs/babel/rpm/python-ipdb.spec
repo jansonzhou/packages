@@ -47,7 +47,8 @@ A collection of tools for internationalizing Python applications
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{srcname}/*
+/usr/bin
+%{python_sitelib}/%{pkgname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
