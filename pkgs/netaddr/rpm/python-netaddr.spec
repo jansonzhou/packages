@@ -14,7 +14,7 @@ Version:       0.7.10
 Release:       1%{?dist}
 License:       BSD
 Group:         Development/Languages
-Source0:       https://github.com/downloads/drkjam/netaddr/netaddr--%{version}.tar.gz
+Source0:       https://github.com/downloads/drkjam/netaddr/netaddr-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26 
