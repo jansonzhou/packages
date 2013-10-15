@@ -8,7 +8,7 @@ Standards-Version: 3.8.4
 
 Package: python-novaclient
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-prettytable, python-argparse, python-httplib2, python-iso8601, python (>= 2.6) | python-simplejson
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-requests (>= 1.1), python-babel, python-pbr, python-six, python-prettytable, python-argparse, python-iso8601, python (>= 2.6) | python-simplejson
 XB-Python-Version: ${python:Versions}
 Description: Client library for OpenStack Nova API
  This is a client for the OpenStack Nova API. 
