@@ -1,7 +1,7 @@
 import setuptools
 
 
-version = '0.2.16'
+version = '0.2.19'
 setuptools.setup(
     name='lettuce',
     version=version,
