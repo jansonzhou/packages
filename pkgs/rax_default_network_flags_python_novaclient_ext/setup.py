@@ -1,6 +1,5 @@
 import setuptools
 
-
 version = '0.1.3'
 setuptools.setup(
     name='rax_default_network_flags_python_novaclient_ext',
