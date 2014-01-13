@@ -44,7 +44,7 @@ Docopt helps you create most beautiful command-line interfaces easily
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{srcname}/*
+%{python_sitelib}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
