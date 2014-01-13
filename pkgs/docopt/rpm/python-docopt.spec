@@ -10,7 +10,7 @@ Name:          python26-%{pkgname}
 Name:          python-%{pkgname}
 %endif
 
-Version:       1.6.1
+Version:       0.6.1
 Release:       1%{?dist}
 License:       MIT
 Group:         Development/Languages
