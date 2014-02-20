@@ -1,7 +1,7 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 %define pkgname euca2ools
-%define srcname euca2ools
+%define srcname 3.0.2
 
 Summary:       Euca2ools provide the functionality of AWS's REST-based and Query-based APIs
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
@@ -33,7 +33,7 @@ enhancements that make them easier to use against both AWS and
 Eucalyptus
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{srcname}
 %{__rm} -rf tests
 
 %build
@@ -50,7 +50,7 @@ Eucalyptus
 %files
 %defattr(-, root, root, -)
 %{python_sitelib}/*
-%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
+%{python_sitelib}/%{pkgname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
