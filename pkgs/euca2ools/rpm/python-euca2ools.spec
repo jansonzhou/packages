@@ -49,8 +49,8 @@ Eucalyptus
 
 %files
 %defattr(-, root, root, -)
+/usr/bin
 %{python_sitelib}/*
-%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
