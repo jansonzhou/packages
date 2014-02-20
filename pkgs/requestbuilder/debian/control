@@ -1,0 +1,13 @@
+Source: requestbuilder
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, python-setuptools (>= 0.6.10), debhelper (>= 7), python-all (>= 2.6), python-all-dev (>= 2.6), python-support (>= 1.0.0)
+Standards-Version: 3.8.4
+
+Package: python-requestbuilder
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-six, python-requests, python-argparse
+XB-Python-Version: ${python:Versions}
+Description: Command line-driven HTTP request builder
+ Command line-driven HTTP request builder
