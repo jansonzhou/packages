@@ -14,7 +14,7 @@ Version:       3.0.2
 Release:       1%{?dist}
 License:       BSD
 Group:         Development/Languages
-#Source0:       https://github.com/eucalyptus/euca2ools/archive/%{version}.tar.gz
+Source0:       %{srcname}-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:      python26, python26-lxml, python26-requestbuilder, python26-requests, python26-six
