@@ -33,7 +33,7 @@ enhancements that make them easier to use against both AWS and
 Eucalyptus
 
 %prep
-%setup -q -n %{srcname}-%{version}
+%setup -q -n %{version}
 %{__rm} -rf tests
 
 %build
