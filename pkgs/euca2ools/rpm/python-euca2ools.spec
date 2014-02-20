@@ -51,6 +51,7 @@ Eucalyptus
 %defattr(-, root, root, -)
 /usr/bin
 %{python_sitelib}/*
+/usr/share/*
 
 %changelog
 
