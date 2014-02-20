@@ -5,7 +5,7 @@
 
 Summary:       Euca2ools provide the functionality of AWS's REST-based and Query-based APIs
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Name:          %{pkgname}
+Name:          python26-%{pkgname}
 %else
 Name:          %{pkgname}
 %endif
