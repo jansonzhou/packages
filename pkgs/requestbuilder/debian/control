@@ -11,3 +11,4 @@ Depends: ${misc:Depends}, ${python:Depends}, python-six, python-requests, python
 XB-Python-Version: ${python:Versions}
 Description: Command line-driven HTTP request builder
  Command line-driven HTTP request builder
+
