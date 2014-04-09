@@ -1,7 +1,7 @@
 import setuptools
 
 
-version = '1.0.5'
+version = '1.0.8'
 setuptools.setup(
     name='python-cinderclient',
     version=version,
