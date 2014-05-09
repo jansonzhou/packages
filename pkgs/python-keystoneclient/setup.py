@@ -1,6 +1,6 @@
 import setuptools
 
-version = '0.7.1'
+version = '0.3.2'
 setuptools.setup(
     name='python-keystoneclient',
     version=version,
