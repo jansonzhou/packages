@@ -1,6 +1,6 @@
 import setuptools
 
-version = '2.30.0'
+version = '2.32.1'
 setuptools.setup(
     name='boto',
     version=version,
