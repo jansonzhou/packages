@@ -1,4 +1,4 @@
-Source: pyopenss
+Source: pyopenssl
 Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>

@@ -2,17 +2,17 @@
 %{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib(1))")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 
-%define pkgname pyOpenSSL
+%define pkgname openssl
 %define srcname pyOpenSSL
 
 Summary:        Python wrapper module around the OpenSSL library
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Name:           %{pkgname}
+Name:           python26-%{pkgname}
 %else
-Name:           %{pkgname}
+Name:			python-%{pkgname}
 %endif
 
-Version:        0.13
+Version:        0.14
 Release:        1%{?dist}
 License:        APL2
 Group:          Development/Languages
