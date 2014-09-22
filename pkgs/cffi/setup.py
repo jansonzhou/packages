@@ -7,5 +7,6 @@ setuptools.setup(
     url='https://pypi.python.org/packages/source/c/cffi/cffi-%s.tar.gz' % version,
     license='MIT',
     author='Armin Rigo, Maciej Fijalkowski',
+    platforms="ubuntu1204",
 )
 
