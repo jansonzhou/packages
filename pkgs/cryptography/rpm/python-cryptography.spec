@@ -20,7 +20,7 @@ Source0:       https://pypi.python.org/packages/source/c/cryptography/cryptograp
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Requires:       python26, python26-six, python26-cffi
 %else
-Requires:       python >= 2.5, python-six, python26-cffi
+Requires:       python >= 2.5, python-six, python-cffi
 %endif
 #BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
