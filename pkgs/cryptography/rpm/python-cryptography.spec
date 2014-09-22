@@ -22,7 +22,7 @@ Requires:       python26, python26-six, python26-cffi
 %else
 Requires:       python >= 2.5, python-six, python26-cffi
 %endif
-BuildArch:     noarch
+#BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %description
