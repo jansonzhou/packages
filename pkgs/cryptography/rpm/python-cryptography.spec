@@ -1,4 +1,5 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib()")}
+%{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 %define pkgname cryptography
 %define srcname cryptography
@@ -45,8 +46,8 @@ algorithms such as symmetric ciphers, message digests and key derivation functio
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/%{srcname}/*
-%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
+%{python_sitearch}/%{srcname}/*
+%{python_sitearch}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
