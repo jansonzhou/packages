@@ -45,7 +45,6 @@ to call compiled C code from Python using interface declarations written in C.
 
 %files
 %defattr(-, root, root, -)
-/usr/bin
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
