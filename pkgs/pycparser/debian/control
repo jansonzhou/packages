@@ -1,0 +1,16 @@
+Source: pycparser
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-support (>= 0.5.3), python-all-dev (>= 2.6), python-setuptools
+XS-Python-Version: >= 2.6
+Standards-Version: 3.8.4
+
+Package: pycparser
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+XB-Python-Version: ${python:Versions}
+Description: C parser in Python
+ pycparser is a complete parser of the C language, written in pure Python using
+ the PLY parsing library. It parses C code into an AST and can serve as a front-end
+ for C compilers or analysis tools.
