@@ -1,0 +1,15 @@
+Source: python-cffi
+Section: python
+Priority: optional
+Maintainer: Scalr Inc. <packages@scalr.net>
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-support (>= 0.5.3), python-all-dev (>= 2.6), python-setuptools, libffi-dev
+XS-Python-Version: >= 2.6
+Standards-Version: 3.8.4
+
+Package: python-cffi
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+XB-Python-Version: ${python:Versions}
+Description: Foreign Function Interface for Python calling C code 
+ C Foreign Function Interface for Python. The goal is to provide a convenient and reliable way
+ to call compiled C code from Python using interface declarations written in C.
