@@ -1,7 +1,7 @@
 import setuptools
 
 
-version = '1.4.1'
+version = '1.8.0'
 setuptools.setup(
     name='six',
     version=version,
