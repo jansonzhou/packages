@@ -9,7 +9,6 @@ Standards-Version: 3.8.4
 Package: python-cffi
 Architecture: all
 Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, pycparser
-XB-Python-Version: ${python:Versions}
 Description: Foreign Function Interface for Python calling C code 
  C Foreign Function Interface for Python. The goal is to provide a convenient and reliable way
  to call compiled C code from Python using interface declarations written in C.
