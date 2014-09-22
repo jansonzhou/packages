@@ -18,9 +18,9 @@ Group:          Development/Languages
 Source0:        https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Requires:       python26
+Requires:       python26, python26-six >= 1.5.2, python26-cryptography >= 0.5.4
 %else
-Requires:       python >= 2.5
+Requires:       python >= 2.5, python-six >= 1.5.2, python-cryptograpy >= 0.5.4
 %endif
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
