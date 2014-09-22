@@ -1,4 +1,5 @@
 %{!?python_sitelib: %global python_sitelib %(%{__python} -c "from distutils.sysconfig import get_python_lib; print(get_python_lib())")}
+%{!?python_sitearch: %global python_sitearch %(%{__python} -c "from distutils.sysconfig import get_python_lib; print get_python_lib(1)")}
 %{!?pyver: %global pyver %(%{__python} -c "import sys ; print sys.version[:3]")}
 
 %define pkgname openssl
@@ -49,8 +50,8 @@ High-level wrapper around a subset of the OpenSSL library, includes
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/OpenSSL/*
-%{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
+%{python_sitearch}/OpenSSL/*
+%{python_sitearch}/%{srcname}-%{version}-py%{pyver}.egg-info
 
 %changelog
 
