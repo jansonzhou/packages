@@ -2,7 +2,7 @@ Source: python-cryptography
 Section: python
 Priority: optional
 Maintainer: Scalr Inc. <packages@scalr.net>
-Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools
+Build-Depends: cdbs, debhelper (>= 5.0.38), python-dev (>= 2.5), python-support, python-setuptools, libffi-dev
 XS-Python-Version: >= 2.5
 Standards-Version: 3.8.4
 
