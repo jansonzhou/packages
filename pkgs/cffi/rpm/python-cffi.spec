@@ -18,9 +18,9 @@ Group:         Development/Languages
 Source0:       https://pypi.python.org/packages/source/c/cffi/cffi-%{version}.tar.gz
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
-Requires:       python26 
+Requires:       python26, python26-pycparser
 %else
-Requires:       python >= 2.5
+Requires:       python >= 2.5, python-pycparser
 %endif
 #BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
