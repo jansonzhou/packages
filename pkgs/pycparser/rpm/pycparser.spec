@@ -46,7 +46,6 @@ parsing library. It parses C code into an AST and can serve as a front-end for C
 
 %files
 %defattr(-, root, root, -)
-%{python_sitelib}/_cffi_backend.so
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
