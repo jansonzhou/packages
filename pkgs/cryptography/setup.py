@@ -10,4 +10,3 @@ setuptools.setup(
     platforms="ubuntu1204",
 )
 
-
