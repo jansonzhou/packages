@@ -8,7 +8,7 @@ Standards-Version: 3.8.4
 
 Package: python-cryptography
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources
+Depends: ${misc:Depends}, ${python:Depends}, python-pkg-resources, python-cffi, python-six
 XB-Python-Version: ${python:Versions}
 Description: cryptography is a package which provides cryptographic recipes and primitives to Python 
  cryptography includes both high level recipes, and low level interfaces to common cryptographic 
