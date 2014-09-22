@@ -10,4 +10,3 @@ setuptools.setup(
     author_email='msjogren@gmail.com'
 )
 
-
