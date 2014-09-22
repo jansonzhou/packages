@@ -45,7 +45,6 @@ algorithms such as symmetric ciphers, message digests and key derivation functio
 
 %files
 %defattr(-, root, root, -)
-/usr/bin
 %{python_sitelib}/%{srcname}/*
 %{python_sitelib}/%{srcname}-%{version}-py%{pyver}.egg-info
 
