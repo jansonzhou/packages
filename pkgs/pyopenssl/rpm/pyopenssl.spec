@@ -11,7 +11,7 @@ Name:           python26-%{pkgname}
 Name:			python-%{pkgname}
 %endif
 
-Version:        0.13
+Version:        0.14
 Release:        1%{?dist}
 License:        APL2
 Group:          Development/Languages
