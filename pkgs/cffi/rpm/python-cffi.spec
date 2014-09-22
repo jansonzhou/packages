@@ -22,7 +22,7 @@ Requires:       python26
 %else
 Requires:       python >= 2.5
 %endif
-BuildArch:     noarch
+#BuildArch:     noarch
 BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 %description
