@@ -7,6 +7,7 @@ setuptools.setup(
     license='APL2',
     url='https://pypi.python.org/packages/source/p/pyOpenSSL/pyOpenSSL-%s.tar.gz' % version,
     author='Jean-Paul Calderone',
-    author_email='msjogren@gmail.com'
+    author_email='msjogren@gmail.com',
+    platforms="ubuntu1204",
 )
 
