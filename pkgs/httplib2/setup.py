@@ -1,6 +1,6 @@
 import setuptools
 
-version = '0.7.7'
+version = '0.9'
 setuptools.setup(
     name='httplib2',
     version=version,

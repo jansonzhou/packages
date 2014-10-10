@@ -7,7 +7,7 @@ Name:           python26-%{pkgname}
 %else
 Name:           python-%{pkgname}
 %endif
-Version:        0.7.7
+Version:        0.9
 Release:        1%{?dist}
 Summary:        A comprehensive HTTP client library
 
