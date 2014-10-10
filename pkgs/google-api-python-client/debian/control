@@ -9,9 +9,8 @@ Standards-Version: 3.8.4
 
 Package: python-google-api-client
 Architecture: all
-Depends: ${misc:Depends}, ${python:Depends}, python-httplib2, python-gflags
+Depends: ${misc:Depends}, ${python:Depends}, python-httplib2 (>= 0.8), python-uritemplate (>= 0.6), python-gflags
 XB-Python-Version: ${python:Versions}
 Description: Google API Client Library for Python
  The Google API Client for Python is a client library for
  accessing the Plus, Moderator, and many other Google APIs.
-

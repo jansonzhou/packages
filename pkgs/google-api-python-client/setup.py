@@ -1,6 +1,6 @@
 import setuptools
 
-version = '1.0c2'
+version = '1.2'
 setuptools.setup(
     name='google-api-python-client',
     version=version,
