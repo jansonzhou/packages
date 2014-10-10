@@ -14,7 +14,7 @@ Summary:        implementation of RFC6570
 Group:          Development/Languages
 License:        Apache License (2.0)
 URL:            https://github.com/uri-templates/uritemplate-py
-Source0:        https://pypi.python.org/packages/source/u/uritemplate/uritemplate-%s.tar.gz
+Source0:        https://pypi.python.org/packages/source/u/uritemplate/uritemplate-%{version}.tar.gz
 BuildRoot:      %{_tmppath}/python-%{pkgname}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 BuildArch:      noarch

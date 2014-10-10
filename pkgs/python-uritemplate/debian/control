@@ -1,4 +1,4 @@
-Source: uritemplate
+Source: python-uritemplate
 Section: python
 XS-Python-Version: all
 Priority: optional
