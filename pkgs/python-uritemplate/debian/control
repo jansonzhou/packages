@@ -1,0 +1,14 @@
+Source: python-uritemplate
+Section: python
+XS-Python-Version: all
+Priority: optional
+Maintainer: Joe Gregorio <jcgregorio@google.com>
+Build-Depends-Indep: python-central (>= 0.5.6), python-setuptools (>= 0.6b3-1), python-dev
+Build-Depends: debhelper (>= 5.0.38)
+Standards-Version: 3.7.2
+
+Package: python-uritemplate
+Architecture: all
+Depends: ${python:Depends}
+XB-Python-Version: ${python:Versions}
+Description: This is a Python implementation of RFC6570, URI Template, and can expand templates up to and including Level 4 in that specification.
