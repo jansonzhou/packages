@@ -18,10 +18,10 @@ Source:			http://google-api-python-client.googlecode.com/files/google-api-python
 
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 #BuildRequires:	python26-devel
-Requires:		python26 python26-httplib2 >= 0.8 python-uritemplate >= 0.6 python26-gflags
+Requires:		python26 python26-httplib2 >= 0.8 python26-gflags
 %else
 #BuildRequires:  python-devel >= 2.5 to avoid errors when building on CentOS 5
-Requires:		python >= 2.5 python-httplib2 >= 0.8 python-uritemplate >= 0.6 python-gflags
+Requires:		python >= 2.5 python-httplib2 >= 0.8 python-gflags
 %endif
 
 BuildArch:		noarch
