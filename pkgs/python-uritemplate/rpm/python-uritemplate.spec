@@ -30,7 +30,6 @@ This is a Python implementation of RFC6570, URI Template, and can expand templat
 %prep
 %setup -q -n %{pkgname}-%{version}
 # Fix non-executable-script error
-sed -i '/^#!\/usr\/bin\/env python$/,+1 d' %{pkgname}.py
 
 %build
 %{__python} setup.py build
