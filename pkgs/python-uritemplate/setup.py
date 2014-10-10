@@ -2,7 +2,7 @@ import setuptools
 
 version = '0.6'
 setuptools.setup(
-    name='python-uritemplate',
+    name='uritemplate',
     version=version,
     url='https://pypi.python.org/packages/source/u/uritemplate/uritemplate-%s.tar.gz' % version,
     license='Apache License, Version 2.0',
