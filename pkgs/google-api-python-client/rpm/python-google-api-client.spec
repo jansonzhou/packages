@@ -47,7 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %{python_sitelib}/*
-/usr/bin/*
 
 %changelog
 * Wed Jul 4 2012 Marat Komarov <marat@scalr.net> 1.0c2-1
