@@ -43,7 +43,6 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc AUTHORS ChangeLog COPYING README
 %{python_sitelib}/*
 
 %changelog
