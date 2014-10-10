@@ -28,7 +28,7 @@ Requires:		python >= 2.5
 This is a Python implementation of RFC6570, URI Template, and can expand templates up to and including Level 4 in that specification.
 
 %prep
-%setup -q -n python-%{pkgname}-%{version}
+%setup -q -n %{pkgname}-%{version}
 # Fix non-executable-script error
 sed -i '/^#!\/usr\/bin\/env python$/,+1 d' %{pkgname}.py
 
