@@ -41,6 +41,7 @@ High-level wrapper around a subset of the OpenSSL library, includes
 %{__python} setup.py build
 
 %install
+rpm -e pyOpenSSL
 %{__rm} -rf %{buildroot}
 %{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
