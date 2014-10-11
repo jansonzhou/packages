@@ -23,7 +23,9 @@ Requires:       python26, python26-six, python26-cryptography >= 0.5.4
 %else
 Requires:       python >= 2.5, python-six, python-cryptography >= 0.5.4
 %endif
-BuildRoot:     %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+
+Obsoletes:      pyOpenSSL 
 
 %description
 High-level wrapper around a subset of the OpenSSL library, includes
@@ -41,7 +43,6 @@ High-level wrapper around a subset of the OpenSSL library, includes
 %{__python} setup.py build
 
 %install
-rpm -qa | grep -i pyOpenSSL && rpm -e pyOpenSSL
 %{__rm} -rf %{buildroot}
 %{__python} setup.py install -O1 --skip-build --root %{buildroot}
 
