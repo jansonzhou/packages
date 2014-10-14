@@ -9,7 +9,7 @@ Summary:        Python wrapper module around the OpenSSL library
 %if 0%{?rhel} >= 4 && 0%{?rhel} <= 5
 Name:           python26-%{pkgname}
 %else
-Name:			python-%{pkgname}
+Name:			pyOpenSSL
 %endif
 
 Version:        0.13.1
@@ -25,7 +25,6 @@ Requires:       python >= 2.5, python-six, python-cryptography >= 0.5.4
 %endif
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-Obsoletes:      pyOpenSSL 
 
 %description
 High-level wrapper around a subset of the OpenSSL library, includes
